@@ -1,0 +1,56 @@
+ADDON_SUMMARY - manual del usuario
+Autor: ADDON_AUTHOR_NAME
+
+%!includeconf: ../addon_userManual.t2tconf
+%!includeconf: addon_informations.t2tconf
+%!includeconf: addon_keys.t2tconf
+URL: ADDON_AUTHOR_URL
+
+
+Descargar:
+- [Versión estable  ADDON_VERSION ADDON_DOWNLOAD_SERVER1]
+- [Versión de desarrollo ADDON_DEV_URL]
+
+
+Compatibilidad:
+- versión mínima de NVDA requerida: MINIMUM_NVDA_VERSION
+- última versión de NVDA probada: LAST_TESTED_NVDA_VERSION
+
+
+Traductor(es): autor del complemento
+
+= Índice =[toc]
+%%toc
+
++ Introducción +
+++ Características ++
+Aunque esta aplicación es relativamente bien accesible, este complemento intenta de mejorar la accesibilidad del software para la recuperación de archivos Recuva haciendo más fácil:
+- nombrando algunos objetos no etiquetados,
+- impediendo la colocación innecesaria del foco en los objetos desconocidos,
+- añadiendo el script "KEY_Search_RESULT" para volver a leer los resultados globales de la búsqueda,
+- maximizando automáticamente la ventana que muestra el resultado de la búsqueda.
+
+
+++ Actualización ++
+La actualización del complemento por defecto se hace automáticamente poco tiempo después de iniciar NVDA (entre 20 y 600 segundos) y como máximo una vez al día.
+Puedes desactivar esta actualización desmarcando la opción "Buscar automáticamente actualizaciones" que se encuentra en las opciones del complemento, elemento de menú "Actualización".
+La versión del complemento puede ser:
+- Ya sea una versión estable: su número de versión es de tipo "1.0" por ejemplo.
+- Ya sea una versión de desarrollo: su número de versión es entonces de tipo "1.0-dev1", o "1.0-rc1", o "1.0-beta2".
+
+
+
+Por defecto, una versión estable se actualiza con la última versión estable (Número de versión superior).
+Sin embargo, es posible actualizar la versión actual estable con una versión de desarrollo de la próxima versión estable. Simplemente marcando la opción "Actualizar también versiones estable hacia versiones de desarrollo" situado en las opciones del complemento, elemento de menú "Actualización".
+
+Una versión de desarrollo se actualiza con una versión de desarrollo más reciente o con su versión estable.
+
+El botón "Buscar actualización" situado en las opciones del complemento, elemento de menú "Actualización", permite buscar inmediatamente una actualización.
+
+
+++ Compatibilidad ++
+Este complemento fue probado con Recuva versión 1.53.
+
++ Historial +
+++ v1.0 (01/03/2020) ++
+Creación del complemento.

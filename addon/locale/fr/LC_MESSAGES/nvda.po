@@ -1,0 +1,544 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: recuvaAccessEnhancement add-on\n"
+"Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
+"POT-Creation-Date: 2020-03-05 11:21+0100\n"
+"PO-Revision-Date: 2020-03-07 14:57+0100\n"
+"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"Language-Team: paul from scriptNVDA <paulber19@laposte.net>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: ../../..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Bookmarks: -1,-1,-1,96,-1,-1,-1,-1,-1,-1\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: appModules/recuva/__init__.py:55
+msgid "File' type to retrive:"
+msgstr "Type de fichier à retrouver:"
+
+#: appModules/recuva/__init__.py:57
+msgid "Where to search:"
+msgstr "Où chercher:"
+
+#: appModules/recuva/__init__.py:76
+msgid "Search's result:"
+msgstr "Résultat de la recherche:"
+
+#: appModules/recuva/__init__.py:100
+msgid "Search's location:"
+msgstr "Emplacement de recherche:"
+
+#: appModules/recuva/__init__.py:110
+msgid "File's  type:"
+msgstr "Type de fichier:"
+
+#: appModules/recuva/__init__.py:176
+msgid "Report the result of the search"
+msgstr "Annoncer le résultat de la recherche"
+
+#: buildVars.py:17
+msgid "Recuva file recovery: accessibility enhancement"
+msgstr ""
+"Logiciel de rrécupération de fichiers Recuva: complément d'accessibilité"
+
+#: buildVars.py:20
+msgid ""
+"Although this application is relatively well accessible, this extension "
+"attempts to improve the accessibility of the Recuva file recovery software "
+"by:\n"
+"\n"
+"* naming certain unlabeled objects,\n"
+"* preventing unnecessary focus from being placed on unknown objects,\n"
+"* adding the script \"KEY_Search_RESULT\" to re-read the overall result of "
+"the search,\n"
+"* automatically maximizing the window displaying the search result.\n"
+msgstr ""
+"Bien que cette application soit relativement bien accessible, cette "
+"extension  tente  d'améliorer l'accessibilité du logiciel de récupération de "
+"fichiers Recuva en:\n"
+"\n"
+"* nommant certains objets non étiquetés,\n"
+"* empêchant le placement inutile du focus sur des objets inconnus,\n"
+"* ajoutant le script \"KEY_Search_RESULT\" pour relire le résultat global de "
+"la recherche,\n"
+"* maximisant automatiquement la fenêtre affichant le  résultat de la "
+"recherche.\n"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:24
+#, python-format
+msgid "%s add-on - settings"
+msgstr "%s - Paramètres"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:29
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:129
+msgid "Update"
+msgstr "Mise à jour"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:33
+msgid "Automatically check for &updates "
+msgstr "Rechercher &automatiquement les mises à jour"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:37
+msgid "Update also release versions to &developpement versions"
+msgstr ""
+"&Mettre aussi à jour les versions stable vers les versions de développement"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:41
+msgid "&Check for update"
+msgstr "&Rechercher une mise à jour"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:63
+msgid "The update is not compatible with this version of Windows."
+msgstr "La mise à jour n'est pas compatible avec cette version de Windows"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:82
+#, python-brace-format
+msgid ""
+"The update is not compatible with this version of NVDA. Minimum NVDA "
+"version: {minYear}{minMajor}, last tested: {testedYear}.{testedMajor}."
+msgstr ""
+"La mise à jour n'est pas compatible avec cette version de NVDA. Version "
+"minimum de NVDA : {minYear}.{minMajor}, dernière version testée : "
+"{testedYear}.{testedMajor}."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:131
+#, python-brace-format
+msgid "Downloading {name}"
+msgstr "Téléchargement de {name} en cours"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:145
+#, python-brace-format
+msgid "Error downloading update for {name}."
+msgstr "Erreur lors du téléchargement de la mise à jour de {name}."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:201
+#, python-brace-format
+msgid "Cannot update {name} - missing file or invalid file format"
+msgstr ""
+"Impossible de mettre à jour {name} - fichier manquant ou format de fichier "
+"incorrect"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:232
+msgid "Updating"
+msgstr "Mise à jour en cours"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:234
+msgid "Please wait while the add-on is being updated."
+msgstr "Veuillez patienter durant la mise à jour de l'extension"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:241
+#, python-brace-format
+msgid "Failed to update {name} add-on"
+msgstr "Échec de la mise à jour de l'extension {name}"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:297
+#, python-brace-format
+msgid "{summary} - update"
+msgstr "{summary} - mise à jour"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:306
+msgid "The service is temporarily under maintenance. Please, try again later."
+msgstr ""
+"le service est momentanément en maintenance. Veuillez réessayer plus tard."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:327
+#, python-format
+msgid "New version available, version %s. Do you want download it now?"
+msgstr ""
+"Une nouvelle version est disponible: version %s. Voulez-vous la télécharger "
+"maintenant ?"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:341
+#, python-format
+msgid "You are up-to-date. %s is the latest version."
+msgstr "Vous êtes à jour, %s est la dernière version."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:347
+msgid "Oops! There was a problem checking for updates. Please retry later"
+msgstr ""
+"Oups! Il y a un problème pour rechercher les mises à jour. Réessayer "
+"ultérieurement."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:501
+msgid "&Yes"
+msgstr "&Oui"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:505
+msgid "&No"
+msgstr "&Non"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:509
+msgid "&Later"
+msgstr "&Plus tard"
+
+#: installTasks.py:48
+msgid "Do you want to keep current add-on configuration settings ?"
+msgstr "Voulez vous conserver les paramètres  actuels de l'extension ?"
+
+#: installTasks.py:50
+#, python-format
+msgid "%s - installation"
+msgstr "%s - installation"
+
+#~ msgid "Informations"
+#~ msgstr "Informations"
+
+#~ msgid "Co&py to Clipboard"
+#~ msgstr "Co&pier dans le presse-papier"
+
+#~ msgid "Copied"
+#~ msgstr "copié"
+
+#~ msgid "Error, the information cannot be copied to the clipboard"
+#~ msgstr "Erreur, l'information ne peut pas être copiée dans le presse-papier"
+
+#~ msgid "%s dialog is allready open"
+#~ msgstr "%s dialogue est déjà ouvert"
+
+#~ msgid "{addonSummary}'s add-on - {dialogTitle}"
+#~ msgstr "{addonSummary} - {dialogTitle}"
+
+#~ msgid "This add-on adds extra functionality when working with Recuva."
+#~ msgstr ""
+#~ "Cette extension améliore l'accessibilité du logiciel de récupération de "
+#~ "fichiers Recuva"
+
+#~ msgid "(command: %s)"
+#~ msgstr "(commande: %s)"
+
+#~ msgid "Recording stopped"
+#~ msgstr "Enregistrement arrêté"
+
+#~ msgid "Recording"
+#~ msgstr "Enregistrement"
+
+#~ msgid "%s not available"
+#~ msgstr "%s non disponible"
+
+#~ msgid "No track"
+#~ msgstr "Aucune piste"
+
+#~ msgid "units of hours"
+#~ msgstr "unités des heures"
+
+#~ msgid "dozens of hours"
+#~ msgstr "dizaines des heures"
+
+#~ msgid "units of minutes"
+#~ msgstr "unités des minutes"
+
+#~ msgid "dozens of minutes"
+#~ msgstr "dizaines des minutes"
+
+#~ msgid "units of seconds"
+#~ msgstr "unités des secondes"
+
+#~ msgid "dozens of seconds"
+#~ msgstr "dizaines des secondes"
+
+#~ msgid "hundreds of seconds"
+#~ msgstr "centaines des secondes"
+
+#~ msgid "thounsands of seconds"
+#~ msgstr "milliers des secondes"
+
+#~ msgid "tens thousands of seconds"
+#~ msgstr "dizaines de milliers des secondes"
+
+#~ msgid "hundreds thousands of seconds"
+#~ msgstr "centaines de milliers des secondes"
+
+#~ msgid "tenths of seconds"
+#~ msgstr "dizième des secondes"
+
+#~ msgid "hundredths of seconds"
+#~ msgstr "centièmes des secondes"
+
+#~ msgid "thousandths of seconds"
+#~ msgstr "millièmes des secondes"
+
+#~ msgid "units of days"
+#~ msgstr "unités des jours"
+
+#~ msgid "dozens of days"
+#~ msgstr "dizaines des jours"
+
+#~ msgid "units"
+#~ msgstr "unités"
+
+#~ msgid "dozens"
+#~ msgstr "dizaines"
+
+#~ msgid "hundreds"
+#~ msgstr "centaines"
+
+#~ msgid "thousands"
+#~ msgstr "milliers"
+
+#~ msgid "tens of thousands"
+#~ msgstr "dizaines de milliers des secondes"
+
+#~ msgid "hundreds of thousands"
+#~ msgstr "centaines de milliers des secondes"
+
+#~ msgid "millions"
+#~ msgstr "millions"
+
+#~ msgid "units of samples"
+#~ msgstr "unités des échantillonsunités des jours"
+
+#~ msgid "dozens of samples"
+#~ msgstr "dizaines des échantillons"
+
+#~ msgid "hundreds of samples"
+#~ msgstr "centaines des échantillons"
+
+#~ msgid "thounsands of samples"
+#~ msgstr "milliers des échantillons"
+
+#~ msgid "tens thousands of samples"
+#~ msgstr "dizaines de milliers des échantillons"
+
+#~ msgid "hundreds thousands of samples"
+#~ msgstr "centaines de milliers des échantillons"
+
+#~ msgid "hours"
+#~ msgstr "heures"
+
+#~ msgid "minutes"
+#~ msgstr "minutes"
+
+#~ msgid "thousands seconds"
+#~ msgstr "milles secondes"
+
+#~ msgid "seconds"
+#~ msgstr "secondes"
+
+#~ msgid "hundredths seconds"
+#~ msgstr "centièmes de secondes"
+
+#~ msgid "milliseconds"
+#~ msgstr "millisecondes"
+
+#~ msgid "days"
+#~ msgstr "jours"
+
+#~ msgid "thousand samples"
+#~ msgstr "mille échantillons"
+
+#~ msgid "samples"
+#~ msgstr "échantillons"
+
+#~ msgid ""
+#~ "report position of start and end of the selection. Twice: report "
+#~ "selection's length. Third: report position of selection's center "
+#~ msgstr ""
+#~ "Annoncer la position du début et de la fin de la sélection. Deux appuis: "
+#~ "annoncer la durée de la sélection. Trois appuis: annoncer la position du "
+#~ "centre de la sélection"
+
+#~ msgid "Report position of start and end of the selection"
+#~ msgstr "Annoncer la position du  début et de la fin de la sélection"
+
+#~ msgid "Report selection's length"
+#~ msgstr "Annoncer la durée de la sélection"
+
+#~ msgid "Report position of selection's center"
+#~ msgstr "Annoncer la position du centre de la sélection"
+
+#~ msgid "report audio position"
+#~ msgstr "Annoncer la position du curseur audio"
+
+#~ msgid "Enable or disable automatic report of selection's changes"
+#~ msgstr ""
+#~ "Activer ou désactiver l'annonce automatique  des changements de sélection"
+
+#~ msgid "report the pressed state of Pause , Play and  Record buttons"
+#~ msgstr ""
+#~ "Annoncer l'état pressé des boutons \"lecture\", \"Pause\", et "
+#~ "\"Enregistrement\""
+
+#~ msgid "Reports the current level of playback meter peak"
+#~ msgstr "Annoncer le niveau courant du vu-mètre de crète  en lecture"
+
+#~ msgid "Reports the current recording meter peak   level"
+#~ msgstr "Annoncer le niveau courant du vu-mètre de crète  en enregistrement"
+
+#~ msgid "Reports the current level of playback's slider"
+#~ msgstr "Annoncer le niveau courant du potentiomètre  de lecture"
+
+#~ msgid "Reports the current level of recording's slider"
+#~ msgstr "Annoncer le niveau courant du potentiomètre d'enregistrement"
+
+#~ msgid "Reports the current playback speed level"
+#~ msgstr "Annoncer la vitesse courante de lecture"
+
+#~ msgid "Display add-on user manual"
+#~ msgstr "Afficher le manuel utilisateur de l'extension"
+
+#~ msgid "Display audacity guide"
+#~ msgstr "Afficher le guide d'Audacity"
+
+#~ msgid "Launch  command shell"
+#~ msgstr "Lancer l'interpréteur de commande"
+
+#~ msgid "Display shell scripts's list"
+#~ msgstr "Afficher la liste des  scripts de l'interpréteur de commande"
+
+#~ msgid "Report automaticaly selection's changes"
+#~ msgstr "Annoncer automatiquement les changements de sélection"
+
+#~ msgid "Don't report automaticaly selection change"
+#~ msgstr "Ne pas Annoncer automatiquement les changements de sélection"
+
+#~ msgid "Not in tracks view"
+#~ msgstr "Pas dans la vue de piste"
+
+#~ msgid "record button pressed"
+#~ msgstr "Bouton enregistrement enfoncé"
+
+#~ msgid "play button pressed"
+#~ msgstr "bouton lecture enfoncé"
+
+#~ msgid "Pause button pressed"
+#~ msgstr "Bouton pause enfoncé"
+
+#~ msgid "No button pressed"
+#~ msgstr "Aucun bouton enfoncé"
+
+#~ msgid "playback speed: %s"
+#~ msgstr "Vitesse de lecture: %s"
+
+#~ msgid "Please wait ..."
+#~ msgstr "Veuillez patienter ..."
+
+#~ msgid "Error: Add-on user manual is not found"
+#~ msgstr "Erreur: le manuel utilisateur de l'extension"
+
+#~ msgid "Error: audacity guide is not found"
+#~ msgstr "Erreur: le guide d'audacity  n'est pas disponible"
+
+#~ msgid "Shell's scripts"
+#~ msgstr "Scripts de l'interpréteur de commandes"
+
+#~ msgid "scripts:"
+#~ msgstr "Scripts:"
+
+#~ msgid "&Run script"
+#~ msgstr "&Lancer le script"
+
+#~ msgid "This version %s of Audacity is not  compatible with the add-on"
+#~ msgstr "Cette version %s  d'Audacity n'est pa compatible avec l'extension"
+
+#~ msgid "%s add-on - warning"
+#~ msgstr "%s - Avertissement"
+
+#~ msgid "one day"
+#~ msgstr "un jour"
+
+#~ msgid "%s days"
+#~ msgstr "%s jours"
+
+#~ msgid "one hour"
+#~ msgstr "une heure"
+
+#~ msgid "%s hours"
+#~ msgstr "%s heures"
+
+#~ msgid "1 minute"
+#~ msgstr "Une minute"
+
+#~ msgid "%s minutes"
+#~ msgstr "%s minutes"
+
+#~ msgid "1 second {0}"
+#~ msgstr "une seconde {0}"
+
+#~ msgid "{0} seconds {1}"
+#~ msgstr "{0} secondes {1}"
+
+#~ msgid "0 second %s"
+#~ msgstr "0 seconde %s"
+
+#~ msgid "%s second"
+#~ msgstr "%s secondes"
+
+#~ msgid "0 second"
+#~ msgstr "0 seconde"
+
+#~ msgid "one sample"
+#~ msgstr "un échantillon"
+
+#~ msgid "%s samples"
+#~ msgstr "%s échantillons"
+
+#~ msgid "0 sample"
+#~ msgstr "0 échantillon"
+
+#~ msgid "Audio position at start of track"
+#~ msgstr "Position audio en début de piste"
+
+#~ msgid "Audio position at selection's start"
+#~ msgstr "Position audio en début de sélection"
+
+#~ msgid "no selection"
+#~ msgstr "Aucune sélection"
+
+#~ msgid ""
+#~ "This add-on adds extra functionality when working with Audacity\n"
+#~ "\n"
+#~ "* a script to report audio position,\n"
+#~ "* a script to report start and end of selection,\n"
+#~ "* a script to announce the state of the  \"Pause\",  \"Play\" and \"record"
+#~ "\" buttons,\n"
+#~ "* automatic audio position changes report ,\n"
+#~ "* automatic selection changes report (can be disabled),\n"
+#~ "* timer control editting support,\n"
+#~ "* use of spacebar to press a button,\n"
+#~ "* script to report playback/recording peak level,\n"
+#~ "* script to report playback/record slider level,\n"
+#~ "* script to report playback speed,\n"
+#~ "* script to display add-on user manual,\n"
+#~ "* script to display audacity guide written by David Bailes.\n"
+#~ "\n"
+#~ "\n"
+#~ "This addon's version has been tested with audacity v2.3.2.\n"
+#~ "\n"
+#~ "Previous versions of Audacity are not  supported.\n"
+#~ msgstr ""
+#~ "Cette extension améliore l'accessiblité du logiciel Audacity en "
+#~ "apportant:\n"
+#~ "* un script  pour connaitre la position audio,\n"
+#~ "* un script  pour connaitre le début et la fin de la sélection,\n"
+#~ "* un script pour l'état des boutons \"Pause\", \"Lecture\" et "
+#~ "\"Enregistrement\",\n"
+#~ "* l'annonce automatique des changements de la position audio,\n"
+#~ "* l'annonce automatique des changements de la sélection (désactivable),\n"
+#~ "* l'utilisation possible de la barre d'espace pour appuyer sur un "
+#~ "bouton,\n"
+#~ "* le support vocal pour les zones  d'édition  définissant un temps ou une "
+#~ "durée dans la Barre d'outils Sélection Audacity,\n"
+#~ "* un  script pour lire le niveau courant des vu-mètres de crète  en "
+#~ "lecture ou enregistrement,\n"
+#~ "* un  script pour lire le niveau courant des potentiomètres de lecture ou "
+#~ "d'enregistrement,\n"
+#~ "* un  script pour lire  la vitesse de lecture,\n"
+#~ "* un  script pour afficher le manuel utilisateur de l'extension,\n"
+#~ "* un script pour afficher le guide d'audacity écrit par  David Bailes.\n"
+#~ "\n"
+#~ "\n"
+#~ "Cette version de l'extension a été testée avec audacity v2.3.2.\n"
+#~ "\n"
+#~ "Les précédentes versions d'Audacity ne sont pas supportées.\n"
+
+#~ msgid "Use space bar and Enter keys to press button"
+#~ msgstr ""
+#~ "Utiliser les touches barre d'espace  ou Entrée pour appuyer sur un bouton"
+
+#~ msgid "Report toolbars's name "
+#~ msgstr "Annoncer le nom des  barres d'outils "

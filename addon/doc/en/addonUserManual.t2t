@@ -1,0 +1,56 @@
+ADDON_SUMMARY - user's guide
+Author: ADDON_AUTHOR_NAME
+
+%!includeconf: ../addon_userManual.t2tconf
+%!includeconf: addon_informations.t2tconf
+%!includeconf: addon_keys.t2tconf
+URL: ADDON_AUTHOR_URL
+
+
+Download:
+- [stable version ADDON_VERSION ADDON_DOWNLOAD_SERVER1]
+- [developpement's version ADDON_DEV_URL]
+
+
+Compatibility:
+- minimum NVDA version = 2019.1
+- last tested NVDA version = 2019.3
+
+
+Traductor (s): automatic translation from french language
+= Summary =[toc]
+%%toc
+
+
++ Introduction +
+++ Features ++
+
+Although this application is relatively well accessible, this extension attempts to improve the accessibility of the Recuva file recovery software:
+- by naming certain unlabeled objects,
+- by preventing unnecessary focus from being placed on unknown objects,
+- adding the script "KEY_Search_RESULT" to re-read the overall result of the search,
+- by automatically maximizing the window displaying the search result.
+
+
+++ Update ++
+The update of the extension is done, by default, automatically shortly after the start of NVDA (between 20 and 600 seconds) and at most once a day.
+It is possible to deactivate this update by unchecking the option "Automatically check for updates" found in the extension settings, menu item "Update".
+The extension version can be:
+- or a stable version: its version number is of type "1.0" for example.
+- or a development version: its version number is then of the type "1.0-dev1", or "1.0-rc1", or "1.0-beta2".
+
+
+By default, a stable version is updated with a more recent stable version (higher version number).
+But it is possible to update the current stable version with a development version of the next stable version. Just check the option "Update also stable versions to development versions" located in the extension settings, menu item "Update".
+
+A development version is updated with a more recent development version or with its stable version.
+
+The "Search for an update" button placed in the extension settings, menu item "Update", allows you to immediately search for an update.
+
+
+++ Compatibility ++
+This extension has been tested with Recuva version 1.53.
+
++ History +
+++ v1.0 (03/01/2020) ++
+Creation of the extension.
