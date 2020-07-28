@@ -6,7 +6,7 @@
 	* [Versión de desarrollo][2]
 * Compatibilidad:
 	* Versión mínima de NVDA requerida: 2019.1
-	* Última versión de NVDA probada: 2019.3
+	* Última versión de NVDA probada: 2020.2
 * Traductor(es): autor del complemento
 
 
@@ -21,5 +21,5 @@ Aunque esta aplicación es relativamente bien accesible, este complemento intent
 Este complemento ha sido probado con la versión 1.53 de Recuva.
 
 
-[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.3.nvda-addon
+[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.0.nvda-addon
 [2]: https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev

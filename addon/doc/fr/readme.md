@@ -6,7 +6,7 @@
 	* [version de développement][2]
 * Compatibilité:
 	* Version minimum de NVDA requise: 2019.1
-	* Dernière version  de NVDA testée: 2019.3
+	* Dernière version  de NVDA testée: 2020.2
 * Traducteur (s): auteur de l'extension
 
 
@@ -21,5 +21,5 @@ Bien que cette application soit relativement bien accessible, cette extension  t
 Cette extension a été testée avec la version 1.53 de Recuva.
 
 
-[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.3.nvda-addon
+[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.0.nvda-addon
 [2]: https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev
