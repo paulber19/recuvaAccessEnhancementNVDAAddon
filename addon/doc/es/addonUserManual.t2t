@@ -6,6 +6,7 @@ Autor: ADDON_AUTHOR_NAME
 %!includeconf: addon_keys.t2tconf
 URL: ADDON_AUTHOR_URL
 
+Repositorio en GitHub: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
 Descargar:
 - [Versión estable  ADDON_VERSION ADDON_DOWNLOAD_SERVER1]
@@ -43,14 +44,23 @@ La versión del complemento puede ser:
 Por defecto, una versión estable se actualiza con la última versión estable (Número de versión superior).
 Sin embargo, es posible actualizar la versión actual estable con una versión de desarrollo de la próxima versión estable. Simplemente marcando la opción "Actualizar también versiones estable hacia versiones de desarrollo" situado en las opciones del complemento, elemento de menú "Actualización".
 
-Una versión de desarrollo se actualiza con una versión de desarrollo más reciente o con su versión estable.
+Una versión de desarrollo se actualiza:
+- con una versión de desarrollo más reciente,
+- con su versión estable,
+- o la última versión estable si la opción anterior no está marcada.
+
 
 El botón "Buscar actualización" situado en las opciones del complemento, elemento de menú "Actualización", permite buscar inmediatamente una actualización.
 
+En el caso de una actualización automática, y si se detecta una nueva versión, el cuadro de diálogo "Actualización" aparece para proponer:
+- ya sea la instalación inmediata de la nueva versión,
+- ya sea para posponer la actualización a más tarde. En este caso, la búsqueda se reiniciará como mínimo una hora más tarde.
+
+
+El botón "Qué hay de nuevo" ofrece la posibilidad, de abrir en el navegador, el historial del complemento y asi poder conocer las novedades de la versión propuesta.
 
 ++ Compatibilidad ++
 Este complemento fue probado con Recuva versión 1.53.
 
 + Historial +
-++ v1.0 (28/07/2020) ++
-Creación del complemento.
+El historial de las versiones del complemento está en el archivo ["changes.html" changes.html]

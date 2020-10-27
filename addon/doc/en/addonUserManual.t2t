@@ -6,6 +6,7 @@ Author: ADDON_AUTHOR_NAME
 %!includeconf: addon_keys.t2tconf
 URL: ADDON_AUTHOR_URL
 
+GitHub repository: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
 Download:
 - [stable version ADDON_VERSION ADDON_DOWNLOAD_SERVER1]
@@ -43,14 +44,23 @@ The extension version can be:
 By default, a stable version is updated with a more recent stable version (higher version number).
 But it is possible to update the current stable version with a development version of the next stable version. Just check the option "Update also stable versions to development versions" located in the extension settings, menu item "Update".
 
-A development version is updated with a more recent development version or with its stable version.
+A development version is updated:
+- with a more recent development version,
+- with its stable version,
+- or with the latest stable version if the previous option is not checked.
+
 
 The "Search for an update" button placed in the extension settings, menu item "Update", allows you to immediately search for an update.
 
+In the case of an automatic update and if a new version is detected, the "Update" dialog box is displayed to suggest:
+- either the immediate installation of the new version,
+- or to postpone the update until later. In this case, the search will be restarted at least one hour later.
+
+
+The "What's new" button offers the possibility of opening, in the browser, the history of the extension and thus being able to know the new features of the proposed version.
 
 ++ Compatibility ++
 This extension has been tested with Recuva version 1.53.
 
 + History +
-++ v1.0 (28/07/2020) ++
-Creation of the extension.
+The version history of this add-on is in the file: ["changes.html" changes.html]

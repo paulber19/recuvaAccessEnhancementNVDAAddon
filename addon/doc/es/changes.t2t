@@ -1,0 +1,19 @@
+ADDON_SUMMARY - Historial
+Autor: ADDON_AUTHOR_NAME
+
+%!includeconf: ../addon_global.t2tconf
+%!includeconf: addon_informations.t2tconf
+
+URL: ADDON_AUTHOR_URL
+
+Repositorio en  GitHub: [ADDON_REPOSITORY ADDON_REPOSITORY]
+
+
++ v1.1 (27/10/2020) +
+- compatibilidad con NVDA 2020.3.
+- limpieza del código con validación Flake8.
+- añadido el botón "Qué hay de nuevo" en el  cuadro de diálogo proponiendo la instalación de una nueva actualización.
+
+
++ v1.0 (28/07/2020) +
+Creación del complemento.
