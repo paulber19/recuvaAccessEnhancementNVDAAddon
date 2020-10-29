@@ -8,6 +8,10 @@ URL: ADDON_AUTHOR_URL
 
 Dépot GitHub: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
+
++ v1.1.1 (29/10/2020) +
+Correction de la documentation
+
 + v1.1 (27/10/2020) +
 - compatibilité avec NVDA 2020.3,
 - nettoyage du code (corrections des erreurs détectées par Flake8)

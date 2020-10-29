@@ -7,7 +7,9 @@
 * Compatibilidad:
 	* Versión mínima de NVDA requerida: 2019.1
 	* Última versión de NVDA probada: 2020.3
-* Traductor(es): autor del complemento
+
+
+Traducido por Gunther Melendez, cambios por Rémy Ruiz.
 
 
 Aunque esta aplicación es relativamente bien accesible, este complemento intenta de mejorar la accesibilidad del software para la recuperación de archivos Recuva haciendo más fácil:
@@ -21,5 +23,5 @@ Aunque esta aplicación es relativamente bien accesible, este complemento intent
 Este complemento ha sido probado con la versión 1.53 de Recuva.
 
 
-[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.1.nvda-addon
+[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.1.1.nvda-addon
 [2]: https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev

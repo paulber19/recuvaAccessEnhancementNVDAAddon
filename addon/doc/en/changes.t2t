@@ -8,8 +8,13 @@ URL: ADDON_AUTHOR_URL
 
 GitHub repository: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
+Traductor (s): automatic translation from french language
 
-Sorry, but this document is an automatic translation from french language.
+
+
+
++ v1.1.1 (29/10/2020) +
+Correction of documentation
 
 + v1.1 (27/10/2020) +
 - compatibility with NVDA 2020.3

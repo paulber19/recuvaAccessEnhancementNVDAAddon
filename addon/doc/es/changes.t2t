@@ -8,10 +8,15 @@ URL: ADDON_AUTHOR_URL
 
 Repositorio en  GitHub: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
+Traducido por Gunther Melendez, cambios por Rémy Ruiz.
+
+
++ v1.1.1 (29/10/2020) +
+Corrección de la documentación
 
 + v1.1 (27/10/2020) +
 - compatibilidad con NVDA 2020.3.
-- limpieza del código con validación Flake8.
+- limpieza del código (correcciones de errores detectados por Flake8)
 - añadido el botón "Qué hay de nuevo" en el  cuadro de diálogo proponiendo la instalación de una nueva actualización.
 
 
