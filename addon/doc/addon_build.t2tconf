@@ -1,8 +1,19 @@
 % NOTHING TO TRANSLATE
 % -----
-%!PostProc (html):ADDON_VERSION 1.1.1
+% download
+%!PreProc:ADDON_DOWNLOAD_SERVER1 AllMyNVDAAddons_REPOSITORY_URL/raw/master/ADDON_NAME/ADDON_NAME-ADDON_CUR_VERSION.nvda-addon
+%!PreProc:ADDON_DOWNLOAD_PREVIOUS AllMyNVDAAddons_REPOSITORY_URL/raw/master/ADDON_NAME/ADDON_NAME-ADDON_PREV_VERSION.nvda-addon
+%!PreProc: ADDON_DEV_URL AllMyNVDAAddons_REPOSITORY_URL/tree/master/ADDON_NAME/dev
+%!PostProc: AllMyNVDAAddons_REPOSITORY_URL https://github.com/paulber007/AllMyNVDAAddons
+% addon repository
+%!PreProc: ADDON_REPOSITORY PAULBER19_REPOSITORY_URL/ADDON_REPOSITORY_NAME.git
+%!PostProc: PAULBER19_REPOSITORY_URL https://github.com/paulber19
+%
+%!PostProc: ADDON_NAME recuvaAccessEnhancement
+%!PostProc: ADDON_REPOSITORY_NAME recuvaAccessEnhancementNVDAAddon
+% current stable version
+%!PostProc (html):ADDON_CUR_VERSION 1.2
 %!PostProc (html):MINIMUM_NVDA_VERSION  2019.1
-%!PostProc (html):LAST_TESTED_NVDA_VERSION  2020.3
-%!PreProc:ADDON_DOWNLOAD_SERVER1 https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-ADDON_VERSION.nvda-addon
-%!PreProc: ADDON_DEV_URL https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev
-%!PreProc: ADDON_REPOSITORY https://github.com/paulber19/recuvaAccessEnhancementNVDAAddon.git
+%!PostProc (html):LAST_TESTED_NVDA_VERSION  2020.4
+%previous stable version
+%!PostProc (html):ADDON_PREV_VERSION 1.1.1

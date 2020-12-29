@@ -49,6 +49,11 @@ class RecuvaSettingsDialog(SettingsDialog):
 		checkForUpdateButton = wx.Button(self, label=labelText)
 		group.addItem(checkForUpdateButton)
 		checkForUpdateButton.Bind(wx.EVT_BUTTON, self.onCheckForUpdate)
+		# translators: this is a label for a button in update settings panel.
+		labelText = _("View &history")
+		seeHistoryButton = wx.Button(self, label=labelText)
+		sHelper.addItem(seeHistoryButton)
+		seeHistoryButton.Bind(wx.EVT_BUTTON, self.onSeeHistory)
 
 	def onCheckForUpdate(self, evt):
 		from .updateHandler import addonUpdateCheck
@@ -57,8 +62,20 @@ class RecuvaSettingsDialog(SettingsDialog):
 			releaseToDev=_addonConfigManager.toggleUpdateReleaseVersionsToDevVersions(False))  # noqa:E501
 		self.Close()
 
+	def onSeeHistory(self, evt):
+		addon = addonHandler.getCodeAddon()
+		from languageHandler import curLang
+		theFile = os.path.join(addon.path, "doc", curLang, "changes.html")
+		if not os.path.exists(theFile):
+			lang = curLang.split("_")[0]
+			theFile = os.path.join(addon.path, "doc", lang, "changes.html")
+			if not os.path.exists(theFile):
+				lang = "en"
+				theFile = os.path.join(addon.path, "doc", lang, "changes.html")
+		os.startfile(theFile)
+
 	def postInit(self):
-		pass
+		self.autoCheckForUpdatesCheckBox.SetFocus()
 
 	def saveSettingChanges(self):
 		if self.autoCheckForUpdatesCheckBox.IsChecked() != _addonConfigManager .toggleAutoUpdateCheck(False):  # noqa:E501

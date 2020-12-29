@@ -6,7 +6,17 @@ Auteur: ADDON_AUTHOR_NAME
 
 URL: ADDON_AUTHOR_URL
 
-Dépot GitHub: [ADDON_REPOSITORY ADDON_REPOSITORY]
+[Dépot GitHub: ADDON_REPOSITORY ADDON_REPOSITORY]
+
+Téléchargement:
+- [Version stable actuelle: ADDON_CUR_VERSION ADDON_DOWNLOAD_SERVER1]
+- [Version stable précédente: ADDON_PREV_VERSION ADDON_DOWNLOAD_PREVIOUS]
+- [versions de développement ADDON_DEV_URL]
+
+
++ v1.2 (29/12/2020) +
+- compatibilité avec NVDA 2020.4
+- ajout du bouton "Voir l'historique" dans la catégorie "Mise à jour " des paramètres de l'extension.
 
 
 + v1.1.1 (29/10/2020) +
