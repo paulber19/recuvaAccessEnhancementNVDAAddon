@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 # install.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright 2020 paulber19
+# Copyright 2020-2021 paulber19
 # This file is covered by the GNU General Public License.
 
 
@@ -18,11 +18,7 @@ def onInstall():
 	import wx
 	import gui
 	from logHandler import log
-	import sys
-	if sys.version.startswith("3"):
-		curPath = os.path.dirname(__file__)
-	else:
-		curPath = os.path.dirname(__file__).decode("mbcs")
+	curPath = os.path.dirname(__file__)
 	from addonHandler import _availableAddons
 	addon = _availableAddons[curPath]
 	addonName = addon.manifest["name"]
@@ -56,10 +52,7 @@ def deleteAddonConfig():
 	import globalVars
 	from logHandler import log
 	import sys
-	if sys.version.startswith("3"):
-		curPath = os.path.dirname(__file__)
-	else:
-		curPath = os.path.dirname(__file__).decode("mbcs")
+	curPath = os.path.dirname(__file__)
 	sys.path.append(curPath)
 	import buildVars
 	addonName = buildVars.addon_info["addon_name"]

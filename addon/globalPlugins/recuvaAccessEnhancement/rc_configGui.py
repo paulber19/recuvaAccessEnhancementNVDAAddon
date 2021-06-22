@@ -1,6 +1,6 @@
 # globalPlugins\recuvaAccessEnhancement\rc_configGui.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright 2020,paulber19
+# Copyright 2020-2021 paulber19
 # released under GPL.
 
 import addonHandler
@@ -57,9 +57,9 @@ class RecuvaSettingsDialog(SettingsDialog):
 
 	def onCheckForUpdate(self, evt):
 		from .updateHandler import addonUpdateCheck
-		wx.CallAfter(
-			addonUpdateCheck, auto=False,
-			releaseToDev=_addonConfigManager.toggleUpdateReleaseVersionsToDevVersions(False))  # noqa:E501
+		self.saveSettingChanges()
+		releaseToDevVersion = self.updateReleaseVersionsToDevVersionsCheckBox.IsChecked()  # noqa:E501
+		wx.CallAfter(addonUpdateCheck, auto=False, releaseToDev=releaseToDevVersion)
 		self.Close()
 
 	def onSeeHistory(self, evt):

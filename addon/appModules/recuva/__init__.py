@@ -1,6 +1,6 @@
 # appModules\recuva\__init__.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright (C) 2020, Paulber19
+# Copyright (C) 2020-2021 Paulber19
 # This file is covered by the GNU General Public License.
 # Released under GPL 2
 
@@ -16,14 +16,13 @@ import sys
 _curAddon = addonHandler.getCodeAddon()
 sharedPath = os.path.join(_curAddon.path, "shared")
 sys.path.append(sharedPath)
-from rc_py3Compatibility import _unicode  # noqa:E402
 from rc_utils import maximizeWindow  # noqa:E402
 del sys.path[-1]
 
 addonHandler.initTranslation()
 _addonSummary = _curAddon.manifest['summary']
 _addonVersion = _curAddon.manifest['version']
-_scriptCategory = _unicode(_addonSummary)
+_scriptCategory = str(_addonSummary)
 _typeRadioButtonControlIDs = [1048, 1049, 1050, 1051, 1061, 1062, 1109]
 
 

@@ -17,6 +17,11 @@ Descarga:
 Traducido por Gunther Melendez, cambios por Rémy Ruiz.
 
 
++ v1.3 (22/06/2021) +
+- Compatibilidad con NVDA 2021.1. Las versiones de NVDA anteriores a la 2019.3 ya no son soportadas.
+- eliminado código relativo a Python 2.7.
+
+
 + v1.2.1 (04/02/2021) +
 Se añadió traducción árabe.
 
