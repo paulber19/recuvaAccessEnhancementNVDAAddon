@@ -15,6 +15,10 @@ Téléchargement :
 
 
 
+
++ v1.4 (04/11/2021) +
+ compatibilité avec NVDA 2021.3. Les versions de NVDA antérieures à la version  2020.4 ne sont pas supportées.
+
 + v1.3 (22/06/2021) +
 - compatibilité avec NVDA 2021.1. Les versions de NVDA antérieures à la version  2019.3 ne sont pas supportées.
 - suppression du code spécifique à Python 2.7.

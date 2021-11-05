@@ -6,7 +6,27 @@
 
 import addonHandler
 import appModuleHandler
-import controlTypes
+try:
+	# for nvda version >= 2022.1
+	from controlTypes.role import Role
+	ROLE_LISTITEM = Role.LISTITEM
+	ROLE_LIST = Role.LIST
+	ROLE_RADIOBUTTON = Role.RADIOBUTTON
+	ROLE_BUTTON = Role.BUTTON
+	ROLE_PROPERTYPAGE  = Role.PROPERTYPAGE 
+	ROLE_STATICTEXT = Role.STATICTEXT
+	ROLE_TREEVIEW = Role.TREEVIEW
+	from controlTypes.state import State
+	STATE_CHECKED = State.CHECKED
+except ImportError:
+	from controlTypes import (
+	ROLE_LISTITEM, ROLE_LIST, ROLE_RADIOBUTTON,
+	ROLE_BUTTON, ROLE_PROPERTYPAGE , ROLE_STATICTEXT,
+	ROLE_TREEVIEW
+	)
+	from controlTypes import (
+	STATE_CHECKED
+	)
 import os
 import ui
 import api
@@ -35,7 +55,7 @@ class Button(NVDAObjects.NVDAObject):
 
 
 class TypeRadioButton(NVDAObjects.NVDAObject):
-	role = controlTypes.ROLE_LISTITEM
+	role = ROLE_LISTITEM
 
 	def _get_name(self):
 		name = super(TypeRadioButton, self)._get_name()
@@ -43,12 +63,12 @@ class TypeRadioButton(NVDAObjects.NVDAObject):
 
 	def _get_states(self):
 		states = super(TypeRadioButton, self)._get_states()
-		states.discard(controlTypes.STATE_CHECKED)
+		states.discard(STATE_CHECKED)
 		return states
 
 
 class TypePropertyPage(NVDAObjects.NVDAObject):
-	role = controlTypes.ROLE_LIST
+	role = ROLE_LIST
 
 	def _get_name(self):
 		if self.childCount == 14:
@@ -127,22 +147,22 @@ class AppModule(appModuleHandler.AppModule):
 		super(AppModule, self).terminate()
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
-		if obj.role == controlTypes.ROLE_RADIOBUTTON\
+		if obj.role == ROLE_RADIOBUTTON\
 			and obj.windowControlID in _typeRadioButtonControlIDs:
 			clsList.insert(0, TypeRadioButton)
 			return
-		if obj.role == controlTypes.ROLE_BUTTON:
+		if obj.role == ROLE_BUTTON:
 			clsList.insert(0, Button)
 			return
-		if obj.role == controlTypes.ROLE_PROPERTYPAGE and obj.childCount in [14, 17]:
+		if obj.role == ROLE_PROPERTYPAGE and obj.childCount in [14, 17]:
 			# file type and search localization property page
 			clsList.insert(0, TypePropertyPage)
 			return
-		if obj.role == controlTypes.ROLE_PROPERTYPAGE\
+		if obj.role == ROLE_PROPERTYPAGE\
 			and obj.windowControlID == 1045:
 			clsList.insert(0, MainPropertyPage)
 			return
-		if obj.role == controlTypes.ROLE_STATICTEXT:
+		if obj.role == ROLE_STATICTEXT:
 			if obj.windowControlID == 1038:
 				clsList.insert(0, FakeStaticText)
 				return
@@ -150,9 +170,9 @@ class AppModule(appModuleHandler.AppModule):
 				# search result text
 				self.searchResultObject = obj
 
-		if obj.role == controlTypes.ROLE_LIST\
+		if obj.role == ROLE_LIST\
 			and obj.windowClassName == "RC Files list"\
-			or obj.role == controlTypes.ROLE_TREEVIEW\
+			or obj.role == ROLE_TREEVIEW\
 			and obj.windowClassName == "RC Files Tree":
 			clsList.insert(0, ResultList)
 			return

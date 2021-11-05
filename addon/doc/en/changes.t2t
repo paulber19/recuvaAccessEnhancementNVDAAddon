@@ -18,6 +18,10 @@ Traductor (s): automatic translation from french language
 
 
 
+
++ v1.4 (11/04/2021) +
+Compatibility with NVDA 2021.3. Versions of NVDA prior to version 2020.4 are not supported.
+
 + v1.3 (06/22/2021) +
 - compatibility with NVDA 2021.1. Versions of NVDA prior to version 2019.3 are not supported.
 - removed code specific to Python 2.7.
