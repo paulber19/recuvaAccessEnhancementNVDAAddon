@@ -1,6 +1,6 @@
 # globalPlugins\recuvaAccessEnhancement\rc_globalPlugin.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright (C) 2020 Paulber19
+# Copyright (C) 2020- 2022 Paulber19
 # This file is covered by the GNU General Public License.
 
 import addonHandler
@@ -12,7 +12,7 @@ import sys
 addon = addonHandler.getCodeAddon()
 path = os.path.join(addon.path, "shared")
 sys.path.append(path)
-from rc_addonConfigManager import _addonConfigManager  # noqa:E402
+from rc_addonConfigManager import _addonConfigManager
 del sys.path[-1]
 
 addonHandler.initTranslation()
@@ -24,7 +24,7 @@ class RecuvaGlobalPlugin(globalPluginHandler.GlobalPlugin):
 		self.installSettingsMenu()
 		from . updateHandler import autoUpdateCheck
 		if _addonConfigManager.toggleAutoUpdateCheck(False):
-			autoUpdateCheck(releaseToDev=_addonConfigManager.toggleUpdateReleaseVersionsToDevVersions(False))  # noqa:E501
+			autoUpdateCheck(releaseToDev=_addonConfigManager.toggleUpdateReleaseVersionsToDevVersions(False))
 
 	def installSettingsMenu(self):
 		self.preferencesMenu = gui.mainFrame.sysTrayIcon.preferencesMenu
@@ -38,7 +38,7 @@ class RecuvaGlobalPlugin(globalPluginHandler.GlobalPlugin):
 	def deleteSettingsMenu(self):
 		try:
 			self.preferencesMenu.Remove(self.menu)
-		except:  # noqa:E722
+		except Exception:
 			pass
 
 	def onMenu(self, evt):

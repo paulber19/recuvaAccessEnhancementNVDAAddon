@@ -1,6 +1,6 @@
 # globalPlugins\recuvaAccessEnhancement\rc_configGui.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright 2020-2021 paulber19
+# Copyright 2020-2022 paulber19
 # released under GPL.
 
 import addonHandler
@@ -12,7 +12,7 @@ import sys
 _curAddon = addonHandler.getCodeAddon()
 path = os.path.join(_curAddon.path, "shared")
 sys.path.append(path)
-from rc_addonConfigManager import _addonConfigManager  # noqa:E402
+from rc_addonConfigManager import _addonConfigManager
 del sys.path[-1]
 
 addonHandler.initTranslation()
@@ -58,7 +58,7 @@ class RecuvaSettingsDialog(SettingsDialog):
 	def onCheckForUpdate(self, evt):
 		from .updateHandler import addonUpdateCheck
 		self.saveSettingChanges()
-		releaseToDevVersion = self.updateReleaseVersionsToDevVersionsCheckBox.IsChecked()  # noqa:E501
+		releaseToDevVersion = self.updateReleaseVersionsToDevVersionsCheckBox.IsChecked()
 		wx.CallAfter(addonUpdateCheck, auto=False, releaseToDev=releaseToDevVersion)
 		self.Close()
 
@@ -78,9 +78,10 @@ class RecuvaSettingsDialog(SettingsDialog):
 		self.autoCheckForUpdatesCheckBox.SetFocus()
 
 	def saveSettingChanges(self):
-		if self.autoCheckForUpdatesCheckBox.IsChecked() != _addonConfigManager .toggleAutoUpdateCheck(False):  # noqa:E501
+		if self.autoCheckForUpdatesCheckBox.IsChecked() != _addonConfigManager .toggleAutoUpdateCheck(False):
 			_addonConfigManager .toggleAutoUpdateCheck(True)
-		if self.updateReleaseVersionsToDevVersionsCheckBox.IsChecked() != _addonConfigManager .toggleUpdateReleaseVersionsToDevVersions(False):  # noqa:E501
+		if self.updateReleaseVersionsToDevVersionsCheckBox.IsChecked() != (
+			_addonConfigManager .toggleUpdateReleaseVersionsToDevVersions(False)):
 			_addonConfigManager .toggleUpdateReleaseVersionsToDevVersions(True)
 
 	def onOk(self, evt):

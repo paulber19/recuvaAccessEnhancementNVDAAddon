@@ -1,6 +1,6 @@
 # appModules\recuva\__init__.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright (C) 2020-2021 Paulber19
+# Copyright (C) 2020-2022 Paulber19
 # This file is covered by the GNU General Public License.
 # Released under GPL 2
 
@@ -13,19 +13,19 @@ try:
 	ROLE_LIST = Role.LIST
 	ROLE_RADIOBUTTON = Role.RADIOBUTTON
 	ROLE_BUTTON = Role.BUTTON
-	ROLE_PROPERTYPAGE  = Role.PROPERTYPAGE 
+	ROLE_PROPERTYPAGE = Role.PROPERTYPAGE
 	ROLE_STATICTEXT = Role.STATICTEXT
 	ROLE_TREEVIEW = Role.TREEVIEW
 	from controlTypes.state import State
 	STATE_CHECKED = State.CHECKED
 except ImportError:
 	from controlTypes import (
-	ROLE_LISTITEM, ROLE_LIST, ROLE_RADIOBUTTON,
-	ROLE_BUTTON, ROLE_PROPERTYPAGE , ROLE_STATICTEXT,
-	ROLE_TREEVIEW
+		ROLE_LISTITEM, ROLE_LIST, ROLE_RADIOBUTTON,
+		ROLE_BUTTON, ROLE_PROPERTYPAGE, ROLE_STATICTEXT,
+		ROLE_TREEVIEW
 	)
 	from controlTypes import (
-	STATE_CHECKED
+		STATE_CHECKED
 	)
 import os
 import ui
@@ -36,7 +36,7 @@ import sys
 _curAddon = addonHandler.getCodeAddon()
 sharedPath = os.path.join(_curAddon.path, "shared")
 sys.path.append(sharedPath)
-from rc_utils import maximizeWindow  # noqa:E402
+from rc_utils import maximizeWindow
 del sys.path[-1]
 
 addonHandler.initTranslation()
@@ -219,4 +219,4 @@ class AppModule(appModuleHandler.AppModule):
 	__gestures = {
 		"kb:alt+control+r": "reportSearchResult",
 		"kb:alt+control+f10": "test",
-		}
+	}

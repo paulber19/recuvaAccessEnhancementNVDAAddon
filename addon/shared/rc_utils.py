@@ -1,6 +1,6 @@
 # shared\rc_utils.py
 # A part of recuvaAccessEnhancement add-on
-# Copyright (C) 2020-2021 paulber19
+# Copyright (C) 2020-2022 paulber19
 # This file is covered by the GNU General Public License.
 
 
@@ -40,5 +40,5 @@ def maximizeWindow(hWnd):
 	if not maximized and windowStyle & WS_MAXIMIZEBOX:
 		try:
 			winUser.PostMessage(hWnd, WM_SYSCOMMAND, SC_MAXIMIZE, 0)
-		except:  # noqa:E722
+		except Exception:
 			pass

@@ -23,7 +23,9 @@ addon_info = {
 	# Add-on description
 	# Translators: Long description to be shown for this add-on
 	# on add-on information from add-ons manager
-	"addon_description": _("""Although this application is relatively well accessible, this extension attempts to improve the accessibility of the Recuva file recovery software by:
+	"addon_description": _(
+		"""Although this application is relatively well accessible, """
+		"""this extension attempts to improve the accessibility of the Recuva file recovery software by:
 
 * naming certain unlabeled objects,
 * preventing unnecessary focus from being placed on unknown objects,
@@ -32,7 +34,7 @@ addon_info = {
 """),
 
 	# version
-	"addon_version": "1.4",
+	"addon_version": "1.5",
 	# Author(s)
 	"addon_author": "paulber19",
 	# URL for the add-on documentation support
@@ -43,7 +45,7 @@ addon_info = {
 	"addon_minimumNVDAVersion": "2020.4",
 	# Last NVDA version supported/tested
 	# (e.g. "2018.4", ideally more recent than minimum version)
-	"addon_lastTestedNVDAVersion": "2021.3",
+	"addon_lastTestedNVDAVersion": "2022.1",
 	# Add-on update channel (default is stable or None)
 	"addon_updateChannel": None,
 }
@@ -59,7 +61,7 @@ pythonSources = [
 	os.path.join(
 		"addon",
 		"globalPlugins", "recuvaAccessEnhancement", "updateHandler", "*.py"),
-	]
+]
 
 # Files that contain strings for translation. Usually your python sources
 i18nSources = pythonSources
