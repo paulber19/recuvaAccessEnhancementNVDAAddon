@@ -6,7 +6,7 @@
 	* [developpement's version][2]
 * Compatibility:
 	* minimum NVDA version: 2020.4
-	* last tested NVDA version: 2022.1
+	* last tested NVDA version: 2022.2
 
 
 Traductor (s): automatic translation from french language
@@ -22,5 +22,5 @@ Although this application is relatively well accessible, this extension attempts
 This extension has been tested with version 1.53 of Recuva.
 
 
-[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.5.nvda-addon
+[1]: https://github.com/paulber007/AllMyNVDAAddons/raw/master/recuvaAccessEnhancement/recuvaAccessEnhancement-1.6.1.nvda-addon
 [2]: https://github.com/paulber007/AllMyNVDAAddons/tree/master/recuvaAccessEnhancement/dev

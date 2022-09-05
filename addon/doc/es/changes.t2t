@@ -16,6 +16,10 @@ Descarga:
 
 Traducido por Gunther Melendez, cambios por Rémy Ruiz.
 
++ v1.6 (31/05/2022) +
+- corrección de la imposibilidad de mostrar el historial del complemento con el botón "Ver historial".
+
+
 + v1.5 (27/01/2022) +
 - Compatibilidad con NVDA 2022.1
 - reinicialización de la configuración en caso de errores en el archivo de configuración.

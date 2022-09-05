@@ -1,0 +1,57 @@
+ADDON_SUMMARY - Geçmiş
+Yazar: ADDON_AUTHOR_NAME
+
+%!includeconf: ../addon_global.t2tconf
+%!includeconf: addon_informations.t2tconf
+
+Adres: ADDON_AUTHOR_URL
+
+[GitHub deposu: ADDON_REPOSITORY ADDON_REPOSITORY]
+
+İndirin:
+- [Mevcut kararlı sürüm: ADDON_CUR_VERSION ADDON_DOWNLOAD_SERVER1]
+- [Önceki kararlı sürüm: ADDON_PREV_VERSION ADDON_DOWNLOAD_PREVIOUS]
+- [geliştirme sürümleri ADDON_DEV_URL]
+
+
++ v1.6 (31/05/2022) +
+- "Geçmişi Görüntüle" düğmesini kullanarak Eklenti geçmişinin görüntülenememesi düzeltildi.
+
+
++ v1.5 (27/01/2022) +
+- NVDA 2022.1 ile uyumluluk,
+- konfigürasyon dosyasında hata olması durumunda konfigürasyonun yeniden başlatılması.
+
+
+Değişiklikler:
+- Eklentinin otomatik olarak güncellenmesi sırasında, kullanıcıya artık uzantının mevcut yapılandırma ayarlarını korumak isteyip istemediği sorulmaz.
+- Eklentinin manuel kurulumu sırasında, kullanıcı uzantının konfigürasyonunun mevcut parametrelerini korumamayı seçtiğinde bir onay talebi istenir.
+
+
++ v1.4 (04/11/2021) +
+NVDA 2021.3 ile uyumluluk. 2020.4'ten önceki NVDA sürümleri desteklenmez.
+
++ v1.3 (22/06/2021) +
+- NVDA 2021.1 ile uyumluluk. 2019.3'ten önceki NVDA sürümleri desteklenmez.
+- Python 2.7'ye özel kod kaldırıldı.
+
+
++ v1.2.1 (04/02/2021) +
+Arapça çeviri eklendi.
+
++ v1.2 (29/12/2020) +
+- NVDA 2020.4 ile uyumluluk
+- Eklenti ayarlarının "Güncelle" kategorisine "Geçmişi Görüntüle" düğmesi eklendi.
+
+
++ v1.1.1 (29/10/2020) +
+Belgeler düzeltildi
+
++ v1.1 (27/10/2020) +
+- NVDA 2020.3 ile uyumluluk,
+- kod temizleme (Flake8 tarafından tespit edilen hataların düzeltilmesi)
+- yeni bir güncellemenin yüklenmesini öneren iletişim kutusuna "Yenilikler" düğmesi eklendi.
+
+
++ v1.0 (28/07/2020) +
+İlk sürüm.

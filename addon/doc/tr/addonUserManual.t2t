@@ -1,0 +1,67 @@
+ADDON_SUMMARY - Kullanım kılavuzu
+yazar: ADDON_AUTHOR_NAME
+
+%!includeconf: ../addon_userManual.t2tconf
+%!includeconf: addon_informations.t2tconf
+%!includeconf: addon_keys.t2tconf
+Adres: ADDON_AUTHOR_URL
+
+[GitHub deposu: ADDON_REPOSITORY ADDON_REPOSITORY]
+
+İndirin:
+- [Kararlı Sürüm ADDON_CUR_VERSION ADDON_DOWNLOAD_SERVER1]
+- [Geliştirme sürümü ADDON_DEV_URL]
+
+
+Uyumluluk:
+- Desteklenen minimum NVDA sürümü: MINIMUM_NVDA_VERSION
+- Test edilen en son NVDA sürümü: LAST_TESTED_NVDA_VERSION
+
+
+Çeviren: Umut KORKMAZ
+
+= Sommaire =[toc]
+%%toc
+
++ giriş +
+++ Özellikler ++
+Bu uygulama nispeten erişilebilir olmasına rağmen, bu eklenti Recuva dosya kurtarma yazılımının erişilebilirliğini şu yollarla geliştirmeye çalışır:
+- bazı etiketlenmemiş nesneleri adlandırma,
+- bilinmeyen nesnelere gereksiz yere odaklanmanın önlenmesi,
+- genel arama sonucunu okumak için "KEY_Search_RESULT" komut dosyasını ekler,
+- arama sonucunu gösteren pencereyi otomatik olarak büyütür.
+
+
+++ Güncelleme ++
+Eklentinin güncellemesi, varsayılan olarak, NVDA'yı başlattıktan kısa bir süre sonra (20 ila 600 saniye arasında) ve günde en fazla bir kez otomatik olarak yapılır.
+Eklenti ayarlarının "Güncelle" kategorisinde bulunan "Güncellemeleri otomatik olarak kontrol et" seçeneğinin işaretini kaldırarak bu güncellemeyi devre dışı bırakmak mümkündür.
+Eklenti, şu sürümleri denetleyebilir:
+- ya kararlı bir sürüm: sürüm numarası örneğin "1.0" türündedir.
+- ya da bir geliştirme sürümü: sürüm numarası "1.0-dev1" veya "1.0-rc1" veya "1.0-beta2" türündedir.
+
+
+Varsayılan olarak, kararlı sürüm daha yeni bir kararlı sürüme güncellenir (daha yüksek sürüm numarası).
+Ancak mevcut kararlı sürümü, bir sonraki kararlı sürümün geliştirme sürümüyle güncellemek mümkündür. Eklenti ayarlarında, "Güncelle" menü öğesinde bulunan "Ayrıca kararlı sürümleri geliştirme sürümlerine güncelle" seçeneğini işaretlemeniz yeterlidir.
+
+Bir geliştirme sürümü:
+- daha yeni bir geliştirme sürümüyle,
+- kararlı sürümü ile,
+- veya önceki seçenek işaretlenmemişse en son kararlı sürümle güncellenir.
+
+Eklenti ayarlarının "Güncelle" kategorisine yerleştirilen "Güncellemeyi kontrol et" düğmesi, hemen bir güncelleme aramanıza olanak tanır.
+
+Aynı kategoriye yerleştirilen "Geçmişi görüntüle" düğmesi, tarayıcıda mevcut sürümün geçmişini görüntülemenizi sağlar.
+
+Otomatik güncelleme durumunda ve yeni bir sürüm algılanırsa, aşağıdakileri sunmak için "Güncelle" iletişim kutusu görüntülenir:
+- ya yeni sürümün hemen yüklenmesi,
+- veya güncellemeyi daha sonraya ertelemek için. Bu durumda, arama en az bir saat sonra yeniden başlayacaktır.
+
+
+Kararlı bir sürüme güncelleme yapılması durumunda, "Yenilikler" düğmesi, tarayıcıda uzantının geçmişini açma ve böylece önerilen sürümün yeni özelliklerini bilme olanağı sunar.
+
+
+++ uyumluluk ++
+Bu eklenti Recuva 1.53 sürümü ile test edilmiştir.
+
++ Geçmiş +
+Bu eklentinin sürüm geçmişi ["changes.html" change.html] dosyalarındadır.
