@@ -13,6 +13,8 @@ Téléchargement :
 - [Version stable précédente : ADDON_PREV_VERSION ADDON_DOWNLOAD_PREVIOUS]
 - [versions de développement ADDON_DEV_URL]
 
++ v1.7 (14/02/2023) +
+Compatibilité avec NVDA 2023.1
 
 + v1.6 (31/05/2022) +
 - correction de l'impossibilité d'afficher l'historique  de l'extension à l'aide du bouton "Voir l'historique".
