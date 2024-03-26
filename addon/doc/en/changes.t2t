@@ -4,9 +4,8 @@ Author: ADDON_AUTHOR_NAME
 %!includeconf: ../addon_global.t2tconf
 %!includeconf: addon_informations.t2tconf
 
-URL: ADDON_AUTHOR_URL
+URL: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
-[GitHub repository: ADDON_REPOSITORY ADDON_REPOSITORY]
 
 Download:
 - [Current stable version: ADDON_CUR_VERSION ADDON_DOWNLOAD_SERVER1]
@@ -16,6 +15,20 @@ Download:
 
 Traductor (s): automatic translation from french language
 
+
+
+
++ v1.8 (March/25/2024) +
+Compatibility with NVDA 2024.1
+
+What's new:
+- taking into account the "Speech on demand" mode introduced in nvda 2024.1: all scripts announcing information will vocalize this information. In this mode, all other scripts will remain silent.
+- compatibility of the extension with the 64-bit version of Recuva.
+
+
+Development :
+- use of the scriptHandler.script decorator.
+- removal of code specific to versions prior to NVDA 2022.1.
 
 
 + v1.7 (February/14/2023) +

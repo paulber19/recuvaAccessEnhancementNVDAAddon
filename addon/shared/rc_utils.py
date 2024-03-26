@@ -1,12 +1,18 @@
 # shared\rc_utils.py
 # A part of recuvaAccessEnhancement add-on
-# Copyright (C) 2020-2022 paulber19
+# Copyright (C) 2020-2024 paulber19
 # This file is covered by the GNU General Public License.
 
 
 import addonHandler
 import winUser
-
+import speech.speech
+try:
+	# NVDA >= 2024.1
+	speakOnDemand = speech.speech.SpeechMode.onDemand
+except AttributeError:
+	# NVDA <= 2023.3
+	speakOnDemand = None
 
 addonHandler.initTranslation()
 # winuser.h constant
@@ -42,3 +48,17 @@ def maximizeWindow(hWnd):
 			winUser.PostMessage(hWnd, WM_SYSCOMMAND, SC_MAXIMIZE, 0)
 		except Exception:
 			pass
+
+
+def executeWithSpeakOnDemand(func , *args, **kwargs):
+	from speech.speech import _speechState, SpeechMode
+	if not speakOnDemand or _speechState.speechMode != SpeechMode.onDemand:
+		return func( *args, **kwargs)
+	_speechState.speechMode  = SpeechMode.talk
+	ret = func(*args, **kwargs)
+	_speechState.speechMode = SpeechMode.onDemand
+	return ret
+
+
+def messageWithSpeakOnDemand(msg):
+	executeWithSpeakOnDemand(ui.message, msg)

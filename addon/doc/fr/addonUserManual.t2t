@@ -4,9 +4,8 @@ Auteur : ADDON_AUTHOR_NAME
 %!includeconf: ../addon_userManual.t2tconf
 %!includeconf: addon_informations.t2tconf
 %!includeconf: addon_keys.t2tconf
-URL : ADDON_AUTHOR_URL
+URL: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
-[Dépot GitHub : ADDON_REPOSITORY ADDON_REPOSITORY]
 
 Téléchargement :
 - [Version stable ADDON_CUR_VERSION ADDON_DOWNLOAD_SERVER1]
@@ -41,7 +40,7 @@ La version de l'extension peut être :
 
 
 Par défaut, une version stable est mise à jour avec une version stable plus récente (numéro de version supérieur).
-Mais il est possible de mettre à jour la version stable courante avec une version de développement de la prochaine version stable. Il suffit de cocher l'option "Mettre aussi à jour les versions stable vers les versions de développement " situé dans les paramètres de l'extension, élément de menu "Mise à jour".
+Mais il est possible de mettre à jour la version stable courante avec une version de développement de la prochaine version stable. Il suffit de cocher l'option "Mettre aussi à jour les versions stables vers les versions de développement " situé dans les paramètres de l'extension, élément de menu "Mise à jour".
 
 Une version de développement est mise à jour :
 - avec une version de développement plus récente,

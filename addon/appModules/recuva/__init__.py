@@ -1,43 +1,36 @@
 # appModules\recuva\__init__.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright (C) 2020-2022 Paulber19
+# Copyright (C) 2020-2024 Paulber19
 # This file is covered by the GNU General Public License.
 # Released under GPL 2
 
 import addonHandler
 import appModuleHandler
-try:
-	# for nvda version >= 2022.1
-	from controlTypes.role import Role
-	ROLE_LISTITEM = Role.LISTITEM
-	ROLE_LIST = Role.LIST
-	ROLE_RADIOBUTTON = Role.RADIOBUTTON
-	ROLE_BUTTON = Role.BUTTON
-	ROLE_PROPERTYPAGE = Role.PROPERTYPAGE
-	ROLE_STATICTEXT = Role.STATICTEXT
-	ROLE_TREEVIEW = Role.TREEVIEW
-	from controlTypes.state import State
-	STATE_CHECKED = State.CHECKED
-except ImportError:
-	from controlTypes import (
-		ROLE_LISTITEM, ROLE_LIST, ROLE_RADIOBUTTON,
-		ROLE_BUTTON, ROLE_PROPERTYPAGE, ROLE_STATICTEXT,
-		ROLE_TREEVIEW
-	)
-	from controlTypes import (
-		STATE_CHECKED
-	)
+
+from controlTypes.role import Role
+from controlTypes.state import State
 import os
 import ui
 import api
+import scriptHandler
 import NVDAObjects
 from NVDAObjects.IAccessible import IAccessible
 import sys
+
 _curAddon = addonHandler.getCodeAddon()
 sharedPath = os.path.join(_curAddon.path, "shared")
 sys.path.append(sharedPath)
-from rc_utils import maximizeWindow
+from rc_utils import maximizeWindow, executeWithSpeakOnDemand
 del sys.path[-1]
+import speech.speech
+try:
+	# NVDA >= 2024.1
+	speech.speech.SpeechMode.onDemand
+	speakOnDemand = {"speakOnDemand": True}
+except AttributeError:
+	# NVDA <= 2023.3
+	speakOnDemand = {}
+
 
 addonHandler.initTranslation()
 _addonSummary = _curAddon.manifest['summary']
@@ -55,7 +48,7 @@ class Button(NVDAObjects.NVDAObject):
 
 
 class TypeRadioButton(NVDAObjects.NVDAObject):
-	role = ROLE_LISTITEM
+	role = Role.LISTITEM
 
 	def _get_name(self):
 		name = super(TypeRadioButton, self)._get_name()
@@ -63,12 +56,12 @@ class TypeRadioButton(NVDAObjects.NVDAObject):
 
 	def _get_states(self):
 		states = super(TypeRadioButton, self)._get_states()
-		states.discard(STATE_CHECKED)
+		states.discard(State.CHECKED)
 		return states
 
 
 class TypePropertyPage(NVDAObjects.NVDAObject):
-	role = ROLE_LIST
+	role = Role.LIST
 
 	def _get_name(self):
 		if self.childCount == 14:
@@ -147,22 +140,24 @@ class AppModule(appModuleHandler.AppModule):
 		super(AppModule, self).terminate()
 
 	def chooseNVDAObjectOverlayClasses(self, obj, clsList):
-		if obj.role == ROLE_RADIOBUTTON\
-			and obj.windowControlID in _typeRadioButtonControlIDs:
+		if (
+			obj.role == Role.RADIOBUTTON
+			and obj.windowControlID in _typeRadioButtonControlIDs):
 			clsList.insert(0, TypeRadioButton)
 			return
-		if obj.role == ROLE_BUTTON:
+		if obj.role == Role.BUTTON:
 			clsList.insert(0, Button)
 			return
-		if obj.role == ROLE_PROPERTYPAGE and obj.childCount in [14, 17]:
+		if obj.role == Role.PROPERTYPAGE and obj.childCount in [14, 17]:
 			# file type and search localization property page
 			clsList.insert(0, TypePropertyPage)
 			return
-		if obj.role == ROLE_PROPERTYPAGE\
-			and obj.windowControlID == 1045:
+		if (
+			obj.role == Role.PROPERTYPAGE
+			and obj.windowControlID == 1045):
 			clsList.insert(0, MainPropertyPage)
 			return
-		if obj.role == ROLE_STATICTEXT:
+		if obj.role == Role.STATICTEXT:
 			if obj.windowControlID == 1038:
 				clsList.insert(0, FakeStaticText)
 				return
@@ -170,10 +165,11 @@ class AppModule(appModuleHandler.AppModule):
 				# search result text
 				self.searchResultObject = obj
 
-		if obj.role == ROLE_LIST\
-			and obj.windowClassName == "RC Files list"\
-			or obj.role == ROLE_TREEVIEW\
-			and obj.windowClassName == "RC Files Tree":
+		if (
+			obj.role == Role.LIST
+			and obj.windowClassName == "RC Files list"
+			or obj.role == Role.TREEVIEW
+			and obj.windowClassName == "RC Files Tree"):
 			clsList.insert(0, ResultList)
 			return
 		if obj.windowClassName == "Static" and obj.windowControlID == 1022:
@@ -207,11 +203,16 @@ class AppModule(appModuleHandler.AppModule):
 	def event_focusEntered(self, obj, nextHandler):
 		nextHandler()
 
+	@scriptHandler.script(
+	
+	description=_("Report the result of the search"),
+	gesture="kb:alt+control+r",
+		**speakOnDemand,
+	)
 	def script_reportSearchResult(self, gesture):
 		if hasattr(self, "searchResultObject"):
 			ui.message(self.searchResultObject.name)
 
-	script_reportSearchResult.__doc__ = _("Report the result of the search")
 
 	def script_test(self, gesture):
 		ui.message("test")

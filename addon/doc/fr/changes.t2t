@@ -3,15 +3,28 @@ Auteur : ADDON_AUTHOR_NAME
 
 %!includeconf: ../addon_global.t2tconf
 %!includeconf: addon_informations.t2tconf
+URL: [ADDON_REPOSITORY ADDON_REPOSITORY]
 
-URL : ADDON_AUTHOR_URL
-
-[Dépot GitHub : ADDON_REPOSITORY ADDON_REPOSITORY]
 
 Téléchargement :
 - [Version stable actuelle : ADDON_CUR_VERSION ADDON_DOWNLOAD_SERVER1]
 - [Version stable précédente : ADDON_PREV_VERSION ADDON_DOWNLOAD_PREVIOUS]
 - [versions de développement ADDON_DEV_URL]
+
+
+
++ v1.8 (25/03/2024) +
+Compatibilité avec NVDA 2024.1
+
+Nouveautés :
+- prise en compte du mode "Parole à la demande" introduit dans nvda 2024.1: tous les scripts annonçant une information vocaliseront cette information. Dans ce mode, tous Les autres scripts resteront muets.
+- compatibilité de l'extension avec la version 64 bits de Recuva.
+
+
+Développement :
+- utilisation du décorateur scriptHandler.script.
+- suppression du code spécifique aux versions antérieures à NVDA 2022.1.
+
 
 + v1.7 (14/02/2023) +
 Compatibilité avec NVDA 2023.1
