@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: recuvaAccessEnhancement add-on\n"
 "Report-Msgid-Bugs-To: paulber19\n"
-"POT-Creation-Date: 2024-03-24 19:35+0100\n"
-"PO-Revision-Date: 2024-03-25 12:12+0100\n"
-"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"POT-Creation-Date: 2024-10-18 12:01+0200\n"
+"PO-Revision-Date: 2024-10-18 12:01+0200\n"
+"Last-Translator: paulber19 <paulber19@laposte.net>\n"
 "Language-Team: paul from scriptNVDA <paulber19@laposte.net>\n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
@@ -13,12 +13,33 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#. Add-on summary, usually the user visible name of the addon.
-#. Translators: Summary for this add-on to be shown on installation
-#. and add-on information.
+#: appModules/recuva/__init__.py:68
+msgid "File' type to retrive:"
+msgstr "Tipo de archivo a encontrar:"
+
+#: appModules/recuva/__init__.py:70
+msgid "Where to search:"
+msgstr "Dónde buscar:"
+
+#: appModules/recuva/__init__.py:92
+msgid "Search's result:"
+msgstr "Resultado de la búsqueda:"
+
+#: appModules/recuva/__init__.py:118
+msgid "Search's location:"
+msgstr "Ubicación de la búsqueda:"
+
+#: appModules/recuva/__init__.py:130
+msgid "File's type:"
+msgstr "Tipo de archivo:"
+
+#: appModules/recuva/__init__.py:208
+msgid "Report the result of the search"
+msgstr "Anunciar el resultado de la búsqueda"
+
 #: buildVars.py:22
 msgid "Recuva file recovery: accessibility enhancement"
 msgstr ""
@@ -49,145 +70,75 @@ msgstr ""
 "* maximizando automáticamente la ventana que muestra el resultado de la "
 "búsqueda.\n"
 
-#. Translators: the label of a message box dialog
-#. to ask the user if he wants keep current configuration settings.
-#: installTasks.py:50
-msgid "Do you want to keep current add-on configuration settings ?"
-msgstr ""
-"¿Deseas conservar las opciones de configuración del complemento actual?"
-
-#. Translators: the title of a message box dialog.
-#: installTasks.py:52 installTasks.py:57
-#, python-format
-msgid "%s - installation"
-msgstr "%s - instalación"
-
-#. Translators: the label of a message box dialog.
-#: installTasks.py:55
-msgid ""
-"Are you sure you don't want to keep the current add-on configuration "
-"settings?"
-msgstr ""
-"¿Estás seguro de que no deseas conservar las opciones de configuración del "
-"complemento actual?"
-
-#: shared\rc_addonConfigManager.py:119
-msgid ""
-"The configuration file of the add-on contains errors. The configuration has "
-"been  reset to factory defaults"
-msgstr ""
-"El archivo de la configuración del complemento contiene errores. La "
-"configuración se ha restablecido a los valores predeterminados"
-
-#. Translators: title of message box
-#: shared\rc_addonConfigManager.py:122
-msgid "Warning"
-msgstr "Advertencia"
-
-#: appModules\recuva\__init__.py:68
-msgid "File' type to retrive:"
-msgstr "Tipo de archivo a encontrar:"
-
-#: appModules\recuva\__init__.py:70
-msgid "Where to search:"
-msgstr "Dónde buscar:"
-
-#: appModules\recuva\__init__.py:92
-msgid "Search's result:"
-msgstr "Resultado de la búsqueda:"
-
-#: appModules\recuva\__init__.py:118
-msgid "Search's location:"
-msgstr "Ubicación de la búsqueda:"
-
-#: appModules\recuva\__init__.py:130
-msgid "File's type:"
-msgstr "Tipo de archivo:"
-
-#: appModules\recuva\__init__.py:208
-msgid "Report the result of the search"
-msgstr "Anunciar el resultado de la búsqueda"
-
-#. Translators: This is the label for the Recuva settings dialog.
-#: globalPlugins\recuvaAccessEnhancement\rc_configGui.py:24
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:24
 #, python-format
 msgid "%s add-on - settings"
 msgstr "%s - Opciones"
 
-#. Translators: This is the label for a group of editing options
-#. in the Recuva settings panel.
-#: globalPlugins\recuvaAccessEnhancement\rc_configGui.py:30
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:83
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:30
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:83
 msgid "Update"
 msgstr "Actualización"
 
-#. Translators: This is the label for a checkbox in the Recuva SettingsDialog.
-#: globalPlugins\recuvaAccessEnhancement\rc_configGui.py:36
-msgid "Automatically check for &updates "
-msgstr "Buscar automáticamente &actualizaciones "
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:36
+msgid "Automatically check for &updates"
+msgstr "Buscar automáticamente &actualizaciones"
 
-#. Translators: This is the label for a checkbox in the Recuva settings panel.
-#: globalPlugins\recuvaAccessEnhancement\rc_configGui.py:42
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:42
 msgid "Update also release versions to &developpement versions"
 msgstr "Actualizar también versiones estable hacia versiones de &desarrollo\""
 
-#. translators: label for a button in recuva settings panel.
-#: globalPlugins\recuvaAccessEnhancement\rc_configGui.py:48
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:48
 msgid "&Check for update"
 msgstr "&Buscar actualización"
 
-#. translators: this is a label for a button in update settings panel.
-#: globalPlugins\recuvaAccessEnhancement\rc_configGui.py:53
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:53
 msgid "View &history"
 msgstr "Ver &historial"
 
-#. Translators: The progress message
-#. indicating the name of the add-on being downloaded.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:86
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:86
+#, python-brace-format
 msgid "Downloading {name}"
 msgstr "Descargando {name}"
 
-#. Translators: A message indicating that an error occurred
-#. while downloading an update to NVDA.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:101
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:101
+#, python-brace-format
 msgid "Error downloading update for {name}."
 msgstr "Error al descargar la actualización de {name}."
 
-#. Translators: message to user
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:155
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:155
+#, python-brace-format
 msgid "Cannot update {name} - missing file or invalid file format"
 msgstr ""
 "No se puede actualizar {name} - archivo ausente o formato de archivo no "
 "válido"
 
-#. Translators: The title of the dialog
-#. presented while an Addon is being updated.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:172
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:172
 msgid "Updating"
 msgstr "Actualizando"
 
-#. Translators: The message displayed while an addon is being updated.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:174
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:174
 msgid "Please wait while the add-on is being updated."
 msgstr "Por favor, espera mientras se actualiza el complemento."
 
-#. Translators: The message displayed when an error occurs
-#. when installing an add-on package.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:195
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:196
+#, python-brace-format
 msgid "Failed to update {name} add-on"
 msgstr "Fallo al actualizar el complemento {name}"
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:247
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:248
+#, python-brace-format
 msgid "{summary} - update"
 msgstr "{summary} - actualización"
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:257
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:258
 msgid "The service is temporarily under maintenance. Please, try again later."
 msgstr ""
 "El servicio está actualmente en mantenimiento. Por favor, inténtelo de nuevo "
 "más tarde."
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:285
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:286
+#, python-brace-format
 msgid ""
 "The update is not compatible with this version of NVDA. Minimum NVDA "
 "version: {minYear}.{minMajor}, last tested: {testedYear}.{testedMajor}."
@@ -195,13 +146,13 @@ msgstr ""
 "La actualización no es compatible con esta versión de NVDA. Versión mínima "
 "de NVDA: {minYear}.{minMajor}, última probada: {testedYear}.{testedMajor}."
 
-#. Translators: message to user to report a new version.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:329
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:330
 #, python-format
 msgid "New version%s is available. Do you want to download it now?"
 msgstr "La nueva versión %s está disponible. ¿Quieres descargarla ahora?"
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:333
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:334
+#, python-brace-format
 msgid ""
 "New version{0} is available.\n"
 "But it is not compatible with this version of NVDA: minimum version requred "
@@ -213,38 +164,62 @@ msgstr ""
 "{1}, última versión probada = {2}.\\n\n"
 "¿Quieres ignorar esta incompatibilidad y aún así descargarla ahora?"
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:353
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:354
 #, python-format
 msgid "You are up-to-date. %s is the latest version."
 msgstr "Estás al día, %s es la versión más reciente."
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:360
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:361
 msgid "Oops! There was a problem checking for updates. Please retry later"
 msgstr ""
 "¡Huy! Hubo un problema al buscar las actualizaciones. Por favor, inténtelo "
 "de nuevo más tarde"
 
-#. Translators: This is a label of a button appearing
-#. on UpdateCheckResult dialog.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:515
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:516
 msgid "&Yes"
 msgstr "&Sí"
 
-#. Translators: This is a label of a button appearing
-#. on UpdateCheckResult dialog.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:520
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:521
 msgid "&No"
 msgstr "&No"
 
-#. Translators: The label of a button to remind the user later
-#. about performing some action.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:525
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:526
 msgid "&Later"
 msgstr "&Más tarde"
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:529
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:530
 msgid "Wha&t's new"
 msgstr "Qué hay &de nuevo"
+
+#: installTasks.py:50
+msgid "Do you want to keep current add-on configuration settings ?"
+msgstr ""
+"¿Deseas conservar las opciones de configuración del complemento actual?"
+
+#: installTasks.py:52 installTasks.py:57
+#, python-format
+msgid "%s - installation"
+msgstr "%s - instalación"
+
+#: installTasks.py:55
+msgid ""
+"Are you sure you don't want to keep the current add-on configuration "
+"settings?"
+msgstr ""
+"¿Estás seguro de que no deseas conservar las opciones de configuración del "
+"complemento actual?"
+
+#: shared/rc_addonConfigManager.py:119
+msgid ""
+"The configuration file of the add-on contains errors. The configuration has "
+"been  reset to factory defaults"
+msgstr ""
+"El archivo de la configuración del complemento contiene errores. La "
+"configuración se ha restablecido a los valores predeterminados"
+
+#: shared/rc_addonConfigManager.py:122
+msgid "Warning"
+msgstr "Advertencia"
 
 #~ msgid "The update is not compatible with this version of Windows."
 #~ msgstr ""

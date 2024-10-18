@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: recuvaAccessEnhancement 1.8\n"
+"Project-Id-Version: recuvaAccessEnhancement 1.9\n"
 "Report-Msgid-Bugs-To: paulber19\n"
-"POT-Creation-Date: 2024-03-26 11:11+0100\n"
+"POT-Creation-Date: 2024-10-18 12:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -106,7 +106,7 @@ msgstr ""
 
 #. Translators: This is the label for a checkbox in the Recuva SettingsDialog.
 #: globalPlugins\recuvaAccessEnhancement\rc_configGui.py:36
-msgid "Automatically check for &updates "
+msgid "Automatically check for &updates"
 msgstr ""
 
 #. Translators: This is the label for a checkbox in the Recuva settings panel.
@@ -154,31 +154,31 @@ msgstr ""
 
 #. Translators: The message displayed when an error occurs
 #. when installing an add-on package.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:195
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:196
 msgid "Failed to update {name} add-on"
 msgstr ""
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:247
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:248
 msgid "{summary} - update"
 msgstr ""
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:257
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:258
 msgid "The service is temporarily under maintenance. Please, try again later."
 msgstr ""
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:285
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:286
 msgid ""
 "The update is not compatible with this version of NVDA. Minimum NVDA "
 "version: {minYear}.{minMajor}, last tested: {testedYear}.{testedMajor}."
 msgstr ""
 
 #. Translators: message to user to report a new version.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:329
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:330
 #, python-format
 msgid "New version%s is available. Do you want to download it now?"
 msgstr ""
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:333
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:334
 msgid ""
 "New version{0} is available.\n"
 "But it is not compatible with this version of NVDA: minimum version requred "
@@ -186,33 +186,33 @@ msgid ""
 "Do you want to ignore this incompatibility and still download it now?"
 msgstr ""
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:353
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:354
 #, python-format
 msgid "You are up-to-date. %s is the latest version."
 msgstr ""
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:360
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:361
 msgid "Oops! There was a problem checking for updates. Please retry later"
 msgstr ""
 
 #. Translators: This is a label of a button appearing
 #. on UpdateCheckResult dialog.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:515
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:516
 msgid "&Yes"
 msgstr ""
 
 #. Translators: This is a label of a button appearing
 #. on UpdateCheckResult dialog.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:520
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:521
 msgid "&No"
 msgstr ""
 
 #. Translators: The label of a button to remind the user later
 #. about performing some action.
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:525
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:526
 msgid "&Later"
 msgstr ""
 
-#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:529
+#: globalPlugins\recuvaAccessEnhancement\updateHandler\update_check.py:530
 msgid "Wha&t's new"
 msgstr ""

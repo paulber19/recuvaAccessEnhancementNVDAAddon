@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: recuvaAccessEnhancement add-on\n"
 "Report-Msgid-Bugs-To: nvda-translations@freelists.org\n"
-"POT-Creation-Date: 2022-01-22 10:17+0100\n"
-"PO-Revision-Date: 2022-01-22 10:20+0100\n"
-"Last-Translator: Rémy Ruiz <remyruiz@gmail.com>\n"
+"POT-Creation-Date: 2024-10-18 11:42+0200\n"
+"PO-Revision-Date: 2024-10-18 11:43+0200\n"
+"Last-Translator: paulber19 <paulber19@laposte.net>\n"
 "Language-Team: paul from scriptNVDA <paulber19@laposte.net>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
@@ -13,31 +13,30 @@ msgstr ""
 "X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
 "X-Poedit-Basepath: ../../..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
-"X-Generator: Poedit 1.8.6\n"
-"X-Poedit-Bookmarks: -1,-1,-1,96,-1,-1,-1,-1,-1,-1\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: appModules/recuva/__init__.py:75
+#: appModules/recuva/__init__.py:68
 msgid "File' type to retrive:"
 msgstr "Type de fichier à retrouver:"
 
-#: appModules/recuva/__init__.py:77
+#: appModules/recuva/__init__.py:70
 msgid "Where to search:"
 msgstr "Où chercher:"
 
-#: appModules/recuva/__init__.py:99
+#: appModules/recuva/__init__.py:92
 msgid "Search's result:"
 msgstr "Résultat de la recherche:"
 
-#: appModules/recuva/__init__.py:125
+#: appModules/recuva/__init__.py:118
 msgid "Search's location:"
 msgstr "Emplacement de recherche:"
 
-#: appModules/recuva/__init__.py:137
+#: appModules/recuva/__init__.py:130
 msgid "File's type:"
 msgstr "Type de fichier:"
 
-#: appModules/recuva/__init__.py:214
+#: appModules/recuva/__init__.py:208
 msgid "Report the result of the search"
 msgstr "Annoncer le résultat de la recherche"
 
@@ -75,12 +74,12 @@ msgid "%s add-on - settings"
 msgstr "%s - Paramètres"
 
 #: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:30
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:112
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:83
 msgid "Update"
 msgstr "Mise à jour"
 
 #: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:36
-msgid "Automatically check for &updates "
+msgid "Automatically check for &updates"
 msgstr "Rechercher &automatiquement les mises à jour"
 
 #: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:42
@@ -96,7 +95,47 @@ msgstr "&Rechercher une mise à jour"
 msgid "View &history"
 msgstr "&Voir l'historique"
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:63
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:86
+#, python-brace-format
+msgid "Downloading {name}"
+msgstr "Téléchargement de {name} en cours"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:101
+#, python-brace-format
+msgid "Error downloading update for {name}."
+msgstr "Erreur lors du téléchargement de la mise à jour de {name}."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:155
+#, python-brace-format
+msgid "Cannot update {name} - missing file or invalid file format"
+msgstr ""
+"Impossible de mettre à jour {name} - fichier manquant ou format de fichier "
+"incorrect"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:172
+msgid "Updating"
+msgstr "Mise à jour en cours"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:174
+msgid "Please wait while the add-on is being updated."
+msgstr "Veuillez patienter durant la mise à jour de l'extension."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:196
+#, python-brace-format
+msgid "Failed to update {name} add-on"
+msgstr "Échec de la mise à jour de l'extension {name}"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:248
+#, python-brace-format
+msgid "{summary} - update"
+msgstr "{summary} - mise à jour"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:258
+msgid "The service is temporarily under maintenance. Please, try again later."
+msgstr ""
+"Le service est momentanément en maintenance. Veuillez réessayer plus tard."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:286
 #, python-brace-format
 msgid ""
 "The update is not compatible with this version of NVDA. Minimum NVDA "
@@ -106,77 +145,51 @@ msgstr ""
 "minimum de NVDA : {minYear}.{minMajor}, dernière version testée : "
 "{testedYear}.{testedMajor}."
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:115
-#, python-brace-format
-msgid "Downloading {name}"
-msgstr "Téléchargement de {name} en cours"
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:130
-#, python-brace-format
-msgid "Error downloading update for {name}."
-msgstr "Erreur lors du téléchargement de la mise à jour de {name}."
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:189
-#, python-brace-format
-msgid "Cannot update {name} - missing file or invalid file format"
-msgstr ""
-"Impossible de mettre à jour {name} - fichier manquant ou format de fichier "
-"incorrect"
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:225
-msgid "Updating"
-msgstr "Mise à jour en cours"
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:227
-msgid "Please wait while the add-on is being updated."
-msgstr "Veuillez patienter durant la mise à jour de l'extension"
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:246
-#, python-brace-format
-msgid "Failed to update {name} add-on"
-msgstr "Échec de la mise à jour de l'extension {name}"
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:306
-#, python-brace-format
-msgid "{summary} - update"
-msgstr "{summary} - mise à jour"
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:316
-msgid "The service is temporarily under maintenance. Please, try again later."
-msgstr ""
-"le service est momentanément en maintenance. Veuillez réessayer plus tard."
-
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:369
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:330
 #, python-format
 msgid "New version%s is available. Do you want to download it now?"
 msgstr ""
 "La nouvelle version %s est disponible. Voulez-vous la télécharger "
 "maintenant ?"
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:386
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:334
+#, python-brace-format
+msgid ""
+"New version{0} is available.\n"
+"But it is not compatible with this version of NVDA: minimum version requred "
+"= {1}, last version tested  = {2}.\n"
+"Do you want to ignore this incompatibility and still download it now?"
+msgstr ""
+"La nouvelle version{0} est disponible.\n"
+"Mais elle n'est pas compatible avec cette version de NVDA : version minimale "
+"requise = {1}, dernière version testée = {2}.\n"
+"Voulez-vous ignorer cette incompatibilité et continuer à la télécharger "
+"maintenant ?"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:354
 #, python-format
 msgid "You are up-to-date. %s is the latest version."
 msgstr "Vous êtes à jour, %s est la dernière version."
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:393
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:361
 msgid "Oops! There was a problem checking for updates. Please retry later"
 msgstr ""
 "Oups! Il y a un problème pour rechercher les mises à jour. Réessayer "
-"ultérieurement."
+"ultérieurement"
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:548
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:516
 msgid "&Yes"
 msgstr "&Oui"
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:553
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:521
 msgid "&No"
 msgstr "&Non"
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:558
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:526
 msgid "&Later"
 msgstr "&Plus tard"
 
-#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:562
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:530
 msgid "Wha&t's new"
 msgstr "Quoi &de neuf"
 
@@ -197,7 +210,7 @@ msgstr ""
 "Voulez-vous vraiment ne pas conserver les paramètres de configuration "
 "actuels de l'extension ?"
 
-#: shared/rc_addonConfigManager.py:118
+#: shared/rc_addonConfigManager.py:119
 msgid ""
 "The configuration file of the add-on contains errors. The configuration has "
 "been  reset to factory defaults"
@@ -205,7 +218,7 @@ msgstr ""
 "Le fichier de configuration de l'extension contient des erreurs. La "
 "configuration a été réinitialisée aux valeurs par défaut"
 
-#: shared/rc_addonConfigManager.py:121
+#: shared/rc_addonConfigManager.py:122
 msgid "Warning"
 msgstr "Avertissement"
 
@@ -521,8 +534,8 @@ msgstr "Avertissement"
 #~ "\n"
 #~ "* a script to report audio position,\n"
 #~ "* a script to report start and end of selection,\n"
-#~ "* a script to announce the state of the  \"Pause\",  \"Play\" and \"record"
-#~ "\" buttons,\n"
+#~ "* a script to announce the state of the  \"Pause\",  \"Play\" and "
+#~ "\"record\" buttons,\n"
 #~ "* automatic audio position changes report ,\n"
 #~ "* automatic selection changes report (can be disabled),\n"
 #~ "* timer control editting support,\n"

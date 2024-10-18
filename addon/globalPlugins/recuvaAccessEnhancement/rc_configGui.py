@@ -33,7 +33,7 @@ class RecuvaSettingsDialog(SettingsDialog):
 			sizer=wx.StaticBoxSizer(wx.StaticBox(self, label=groupText), wx.VERTICAL))
 		sHelper.addItem(group)
 		# Translators: This is the label for a checkbox in the Recuva SettingsDialog.
-		labelText = _("Automatically check for &updates ")
+		labelText = _("Automatically check for &updates")
 		self.autoCheckForUpdatesCheckBox = group.addItem(
 			wx.CheckBox(self, wx.ID_ANY, label=labelText))
 		self.autoCheckForUpdatesCheckBox.SetValue(
