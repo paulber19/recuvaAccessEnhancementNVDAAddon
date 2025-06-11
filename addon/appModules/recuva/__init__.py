@@ -1,6 +1,6 @@
 # appModules\recuva\__init__.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright (C) 2020-2024 Paulber19
+# Copyright (C) 2020-2025 Paulber19
 # This file is covered by the GNU General Public License.
 # Released under GPL 2
 
@@ -22,14 +22,9 @@ sharedPath = os.path.join(_curAddon.path, "shared")
 sys.path.append(sharedPath)
 from rc_utils import maximizeWindow, executeWithSpeakOnDemand
 del sys.path[-1]
+del sys.modules["rc_utils"]
 import speech.speech
-try:
-	# NVDA >= 2024.1
-	speech.speech.SpeechMode.onDemand
-	speakOnDemand = {"speakOnDemand": True}
-except AttributeError:
-	# NVDA <= 2023.3
-	speakOnDemand = {}
+speakOnDemand = {"speakOnDemand": True}
 
 
 addonHandler.initTranslation()
@@ -204,20 +199,18 @@ class AppModule(appModuleHandler.AppModule):
 		nextHandler()
 
 	@scriptHandler.script(
-	
-	description=_("Report the result of the search"),
-	gesture="kb:alt+control+r",
+		description=_("Report the result of the search"),
+		gesture="kb:alt+control+r",
 		**speakOnDemand,
 	)
 	def script_reportSearchResult(self, gesture):
 		if hasattr(self, "searchResultObject"):
 			ui.message(self.searchResultObject.name)
 
-
 	def script_test(self, gesture):
 		ui.message("test")
 
 	__gestures = {
 		"kb:alt+control+r": "reportSearchResult",
-		"kb:alt+control+f10": "test",
+		# "kb:alt+control+f10": "test",
 	}

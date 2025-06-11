@@ -1,6 +1,6 @@
 # globalPlugins\recuvaAccessEnhancement\rc_configGui.py
 # a part of recuvaAccessEnhancement add-on
-# Copyright 2020-2022 paulber19
+# Copyright 2020-2025 paulber19
 # released under GPL.
 
 import addonHandler
@@ -81,6 +81,8 @@ class RecuvaSettingsDialog(SettingsDialog):
 	def saveSettingChanges(self):
 		if self.autoCheckForUpdatesCheckBox.IsChecked() != _addonConfigManager .toggleAutoUpdateCheck(False):
 			_addonConfigManager .toggleAutoUpdateCheck(True)
+			from . updateHandler.update_check import setCheckForUpdate
+			setCheckForUpdate(_addonConfigManager.toggleAutoUpdateCheck(False))
 		if self.updateReleaseVersionsToDevVersionsCheckBox.IsChecked() != (
 			_addonConfigManager .toggleUpdateReleaseVersionsToDevVersions(False)):
 			_addonConfigManager .toggleUpdateReleaseVersionsToDevVersions(True)
