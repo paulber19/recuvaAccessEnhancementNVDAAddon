@@ -34,7 +34,7 @@ addon_info = {
 """),
 
 	# version
-	"addon_version": "1.10",
+	"addon_version": "1.10.2",
 	# Author(s)
 	"addon_author": "paulber19",
 	# URL for the add-on documentation support

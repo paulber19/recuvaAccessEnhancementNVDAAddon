@@ -1,0 +1,220 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: RecuvaAccessEnhancement\n"
+"POT-Creation-Date: 2025-06-15 12:30+0300\n"
+"PO-Revision-Date: 2025-06-15 12:30+0300\n"
+"Last-Translator: nvda.ru\n"
+"Language-Team: nvda.ru\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: appModules\n"
+"X-Poedit-SearchPath-1: globalPlugins\n"
+"X-Poedit-SearchPath-2: shared\n"
+"X-Poedit-SearchPath-3: buildVars.py\n"
+"X-Poedit-SearchPath-4: installTasks.py\n"
+
+#: appModules/recuva/__init__.py:63
+msgid "File' type to retrive:"
+msgstr "Тип файла для восстановления"
+
+#: appModules/recuva/__init__.py:65
+msgid "Where to search:"
+msgstr "Где искать:"
+
+#: appModules/recuva/__init__.py:87
+msgid "Search's result:"
+msgstr "Результаты поиска:"
+
+#: appModules/recuva/__init__.py:113
+msgid "Search's location:"
+msgstr "Место поиска:"
+
+#: appModules/recuva/__init__.py:125
+msgid "File's type:"
+msgstr "Тип файла:"
+
+#: appModules/recuva/__init__.py:202
+msgid "Report the result of the search"
+msgstr "Сообщить о результатах поиска"
+
+#: buildVars.py:22
+msgid "Recuva file recovery: accessibility enhancement"
+msgstr "Восстановление файлов Recuva: улучшение доступности"
+
+#: buildVars.py:27
+msgid ""
+"Although this application is relatively well accessible, this extension "
+"attempts to improve the accessibility of the Recuva file recovery software "
+"by:\n"
+"\n"
+"* naming certain unlabeled objects,\n"
+"* preventing unnecessary focus from being placed on unknown objects,\n"
+"* adding the script \"KEY_Search_RESULT\" to re-read the overall result of "
+"the search,\n"
+"* automatically maximizing the window displaying the search result.\n"
+msgstr ""
+"Хотя данное приложение относительно доступно для использования, это "
+"дополнение пытается улучшить доступность программы восстановления файлов "
+"Recuva следующим образом:\n"
+"\n"
+" присвоение имен определенным объектам без меток,\n"
+" предотвращение ненужной фокусировки на неизвестных объектах,\n"
+" добавление скрипта «KEY_Search_RESULT» для повторного чтения общего "
+"результата поиска,\n"
+" автоматическое разворачивание окна с результатом поиска.\n"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:24
+#, python-format
+msgid "%s add-on - settings"
+msgstr "Дополнение %s - настройки"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:30
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:99
+msgid "Update"
+msgstr "Обновление"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:36
+msgid "Automatically check for &updates"
+msgstr "Автоматически проверять &обновления"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:42
+msgid "Update also release versions to &developpement versions"
+msgstr "Обновить также выпуск версий до &разрабатываемых версий"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:48
+msgid "&Check for update"
+msgstr "&Проверить обновления"
+
+#: globalPlugins/recuvaAccessEnhancement/rc_configGui.py:53
+msgid "View &history"
+msgstr "Просмотр &истории"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:102
+#, python-brace-format
+msgid "Downloading {name}"
+msgstr "Загрузка {name}"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:117
+#, python-brace-format
+msgid "Error downloading update for {name}."
+msgstr "Ошибка при загрузке обновления для {name}."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:171
+#, python-brace-format
+msgid "Cannot update {name} - missing file or invalid file format"
+msgstr ""
+"Не удается обновить {name} - отсутствует файл или неверный формат файла"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:188
+msgid "Updating"
+msgstr "Обновление"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:190
+msgid "Please wait while the add-on is being updated."
+msgstr "Пожалуйста, подождите, пока дополнение обновляется."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:212
+#, python-brace-format
+msgid "Failed to update {name} add-on"
+msgstr "Не удалось обновить дополнение {name}."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:256
+#, python-brace-format
+msgid "{summary} - update"
+msgstr "{summary} - обновление"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:269
+msgid "The service is temporarily under maintenance. Please, try again later."
+msgstr ""
+"Сервис временно находится на техническом обслуживании. Пожалуйста, повторите "
+"попытку позже."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:297
+#, python-brace-format
+msgid ""
+"The update is not compatible with this version of NVDA. Minimum NVDA "
+"version: {minYear}.{minMajor}, last tested: {testedYear}.{testedMajor}."
+msgstr ""
+"Обновление несовместимо с этой версией NVDA. Минимальная версия NVDA: "
+"{minYear}.{minMajor}, последнее тестируемая: {testedYear}.{testedMajor}."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:357
+#, python-format
+msgid "New version%s is available. Do you want to download it now?"
+msgstr "Доступна новая версия %s. Хотите скачать ее прямо сейчас?"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:361
+#, python-brace-format
+msgid ""
+"New version{0} is available.\n"
+"But it is not compatible with this version of NVDA: minimum version requred "
+"= {1}, last version tested  = {2}.\n"
+"Do you want to ignore this incompatibility and still download it now?"
+msgstr ""
+"Доступна новая версия{0}.\n"
+"Но она несовместима с этой версией NVDA: минимальная требуемая версия = {1}, "
+"последняя проверенная версия = {2}.\n"
+"Хотите ли вы проигнорировать эту несовместимость и скачать ее сейчас?"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:382
+#, python-format
+msgid "You are up-to-date. %s is the latest version."
+msgstr "Вы в курсе последних событий. %s - это последняя версия."
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:389
+msgid "Oops! There was a problem checking for updates. Please retry later"
+msgstr ""
+"Опа! Не удалось проверить наличие обновлений. Пожалуйста, повторите попытку "
+"позже"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:544
+msgid "&Yes"
+msgstr "&Да"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:549
+msgid "&No"
+msgstr "&Нет"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:554
+msgid "&Later"
+msgstr "&Позже"
+
+#: globalPlugins/recuvaAccessEnhancement/updateHandler/update_check.py:558
+msgid "Wha&t's new"
+msgstr "&Что нового"
+
+#: installTasks.py:42
+msgid "Do you want to keep current add-on configuration settings ?"
+msgstr "Хотите ли вы сохранить текущие настройки конфигурации дополнения?"
+
+#: installTasks.py:44 installTasks.py:49
+#, python-format
+msgid "%s - installation"
+msgstr "%s - установка"
+
+#: installTasks.py:47
+msgid ""
+"Are you sure you don't want to keep the current add-on configuration "
+"settings?"
+msgstr ""
+"Вы уверены, что не хотите сохранить текущие настройки конфигурации "
+"дополнения?"
+
+#: shared/rc_addonConfigManager.py:135
+msgid ""
+"The configuration file of the add-on contains errors. The configuration has "
+"been  reset to factory defaults"
+msgstr ""
+"Конфигурационный файл дополнения содержит ошибки. Конфигурация была сброшена "
+"до заводских настроек по умолчанию"
+
+#: shared/rc_addonConfigManager.py:138
+msgid "Warning"
+msgstr "Внимание"
