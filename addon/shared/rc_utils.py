@@ -8,12 +8,8 @@ import addonHandler
 import winUser
 import ui
 import speech.speech
-try:
-	# NVDA >= 2024.1
-	speakOnDemand = speech.speech.SpeechMode.onDemand
-except AttributeError:
-	# NVDA <= 2023.3
-	speakOnDemand = None
+speakOnDemand = speech.speech.SpeechMode.onDemand
+
 
 addonHandler.initTranslation()
 # winuser.h constant

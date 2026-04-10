@@ -12,6 +12,21 @@ Téléchargement :
 - [versions de développement ADDON_DEV_URL]
 
 
++ v1.11 (26/02/2026) +
+Compatibilité avec NVDA 2026.1
+
+Les versions antérieures à la version NVDA 2025.1 ne sont plus supportées.
+
+
+Développement :
+- pour afficher le "Quoi de neuf" d'une nouvelle version de l'extension, le document "changes.html" n'est plus ouvert par"urlopen", mais est téléchargé , enregistré momentanément dans le dossier "appData\local\temp" et ouvert dans le navigateur.
+- utilisation de json en lieu et place de pickle pour stoquer l'état de la mise à jour de l'extension.-  prise en compte de la fermeture du site rawgit.com pour la mise à jour  de l'extension.
+
+
+Mise en conformité avec l'API de NVDA :
+- prise en compte du déplacement de la version de NVDA dans le module buildVersion.py.
+
+
 + v1.10 (05/06/2025) +
 Compatibilité avec NVDA 2025.1
 

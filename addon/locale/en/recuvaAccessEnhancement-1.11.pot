@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: recuvaAccessEnhancement 1.10.2\n"
-"Report-Msgid-Bugs-To: paulber19\n"
-"POT-Creation-Date: 2026-02-05 15:51+0100\n"
+"Project-Id-Version: recuvaAccessEnhancement 1.11\n"
+"Report-Msgid-Bugs-To: paulber19 <paulber19@laposte.net>\n"
+"POT-Creation-Date: 2026-04-01 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,55 +38,55 @@ msgid ""
 msgstr ""
 
 #. Translators: the label of a message box dialog.
-#: installTasks.py:42
+#: installTasks.py:40
 msgid "Do you want to keep current add-on configuration settings ?"
 msgstr ""
 
 #. Translators: the title of a message box dialog.
-#: installTasks.py:44 installTasks.py:49
+#: installTasks.py:42 installTasks.py:47
 #, python-format
 msgid "%s - installation"
 msgstr ""
 
 #. Translators: the label of a message box dialog.
-#: installTasks.py:47
+#: installTasks.py:45
 msgid ""
 "Are you sure you don't want to keep the current add-on configuration "
 "settings?"
 msgstr ""
 
-#: shared\rc_addonConfigManager.py:135
+#: shared\rc_addonConfigManager.py:134
 msgid ""
 "The configuration file of the add-on contains errors. The configuration has "
 "been  reset to factory defaults"
 msgstr ""
 
 #. Translators: title of message box
-#: shared\rc_addonConfigManager.py:138
+#: shared\rc_addonConfigManager.py:137
 msgid "Warning"
 msgstr ""
 
-#: appModules\recuva\__init__.py:63
+#: appModules\recuva\__init__.py:62
 msgid "File' type to retrive:"
 msgstr ""
 
-#: appModules\recuva\__init__.py:65
+#: appModules\recuva\__init__.py:64
 msgid "Where to search:"
 msgstr ""
 
-#: appModules\recuva\__init__.py:87
+#: appModules\recuva\__init__.py:86
 msgid "Search's result:"
 msgstr ""
 
-#: appModules\recuva\__init__.py:113
+#: appModules\recuva\__init__.py:112
 msgid "Search's location:"
 msgstr ""
 
-#: appModules\recuva\__init__.py:125
+#: appModules\recuva\__init__.py:124
 msgid "File's type:"
 msgstr ""
 
-#: appModules\recuva\__init__.py:202
+#: appModules\recuva\__init__.py:201
 msgid "Report the result of the search"
 msgstr ""
 

@@ -120,13 +120,12 @@ class AddonConfigurationManager():
 	}
 
 	def __init__(self):
-
 		self.configFileName = "%sAddon.ini" % _addonName
 		self.loadSettings()
 		config.post_configSave.register(self.handlePostConfigSave)
 
 	def warnConfigurationReset(self):
-		from .messages import alert
+		from rc_messages import alert
 		wx.CallLater(
 			100,
 			alert,

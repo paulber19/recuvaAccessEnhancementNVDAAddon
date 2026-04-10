@@ -22,7 +22,6 @@ sharedPath = os.path.join(_curAddon.path, "shared")
 sys.path.append(sharedPath)
 from rc_utils import maximizeWindow, executeWithSpeakOnDemand
 del sys.path[-1]
-del sys.modules["rc_utils"]
 import speech.speech
 speakOnDemand = {"speakOnDemand": True}
 
